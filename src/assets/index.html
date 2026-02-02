@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O3 Consulting - Dépliant Tri-fold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Oswald:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="print-instructions">
+        <p>📄 Pour imprimer : Utilisez le format A4 paysage (landscape) et imprimez recto-verso</p>
+        <button onclick="window.print()" class="print-btn">🖨️ Imprimer le dépliant</button>
+    </div>
+
+    <!-- RECTO (Face avant du dépliant) -->
+    <div class="brochure-page recto">
+        <!-- Volet 1 - Face avant (à droite quand plié) -->
+        <div class="panel panel-1">
+            <div class="geometric-bg">
+                <div class="geo-shape shape-1"></div>
+                <div class="geo-shape shape-2"></div>
+                <div class="geo-shape shape-3"></div>
+                <div class="geo-shape shape-4"></div>
+            </div>
+
+            <div class="front-cover">
+                <div class="logo-box">
+                    <img src="logo.png" alt="O3 Consulting Logo" class="main-logo">
+                    <h1 class="company-name">O3 CONSULTING</h1>
+                    <p class="company-tagline">Nous travaillons ensemble pour une<br><strong>amélioration
+                            continue</strong></p>
+                </div>
+
+                <div class="cover-image">
+                    <img src="safety-workers.jpg" alt="Safety at work" class="worker-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Volet 2 - Intérieur gauche -->
+        <div class="panel panel-2">
+            <div class="geometric-bg-inner">
+                <div class="geo-shape-inner shape-inner-1"></div>
+                <div class="geo-shape-inner shape-inner-2"></div>
+            </div>
+
+            <div class="inner-content">
+                <div class="intro-section">
+                    <h2 class="intro-title">O3 Consulting</h2>
+                    <p class="intro-subtitle">est un <span class="highlight">Bureau d'étude HSE</span>, conseil et
+                        d'expertise industrielle spécialisé dans les domaines de management de la Qualité, de
+                        l'Environnement et de la Santé & Sécurité au Travail.</p>
+
+                    <p class="intro-text">Notre force est la méthode que nous utilisons : ne jamais imposer de solutions
+                        prédéfinies aux clients mais développer une série d'interventions dans l'entreprise en
+                        partageant des propositions afin de valoriser la richesse des expériences déjà acquises.</p>
+                </div>
+
+                <div class="services-section">
+                    <h3 class="section-title">Nos services</h3>
+
+                    <div class="service-category">
+                        <h4 class="category-title">Nos Services Principaux</h4>
+                        <ul class="service-list">
+                            <li>L'étude de dangers (EDD)</li>
+                            <li>Etude de poste Ergonomique</li>
+                            <li>Rapport sur les produits dangereux</li>
+                            <li>Plan d'opérations interne (POI)</li>
+                            <li>Système de Gestion de la Sécurité (SGS)</li>
+                            <li>Diagnostic et étude des réseaux anti-incendie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Volet 3 - Intérieur centre -->
+        <div class="panel panel-3">
+            <div class="geometric-bg-inner">
+                <div class="geo-shape-inner shape-inner-3"></div>
+                <div class="geo-shape-inner shape-inner-4"></div>
+            </div>
+
+            <div class="inner-content">
+                <div class="service-category">
+                    <h4 class="category-title">Accompagnement pour la certification ISO</h4>
+                    <ul class="service-list">
+                        <li>Qualité <span class="iso-ref">ISO 9001:2015</span></li>
+                        <li>Environnement <span class="iso-ref">ISO 14001:2015</span></li>
+                        <li>Santé et Sécurité au travail <span class="iso-ref">ISO 45001:2018</span></li>
+                        <li>la sécurité alimentaire <span class="iso-ref">ISO 22000:2018</span></li>
+                        <li>organismes d'inspection <span class="iso-ref">ISO/IEC 17020</span></li>
+                        <li>Laboratoires d'étalonnages <span class="iso-ref">ISO/IEC 17025</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h4 class="category-title">Formation et assistance technique QHSE</h4>
+                    <ul class="service-list">
+                        <li>Formations Qualité et HSE</li>
+                        <li>Assistance technique QHSE</li>
+                        <li>Plan de sûreté interne PSI</li>
+                        <li>Plan HSE et plan qualité</li>
+                        <li>Mise à niveau des PME</li>
+                        <li>Préparations des dossiers de soumission</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VERSO (Face arrière du dépliant) -->
+    <div class="brochure-page verso">
+        <!-- Volet 4 - Dos (à gauche quand plié) -->
+        <div class="panel panel-4">
+            <div class="geometric-bg">
+                <div class="geo-shape shape-5"></div>
+                <div class="geo-shape shape-6"></div>
+            </div>
+
+            <div class="back-content">
+                <div class="formations-section">
+                    <h3 class="section-title-white">Nos Formations Spécialisées</h3>
+
+                    <div class="formation-grid">
+                        <div class="formation-item">
+                            <div class="formation-icon">🚑</div>
+                            <h4>Premiers Secours</h4>
+                            <p>Formation SST et gestes qui sauvent en milieu professionnel</p>
+                        </div>
+
+                        <div class="formation-item">
+                            <div class="formation-icon">🔥</div>
+                            <h4>Lutte contre Incendies</h4>
+                            <p>Manipulation extincteurs et procédures d'évacuation</p>
+                        </div>
+
+                        <div class="formation-item">
+                            <div class="formation-icon">💪</div>
+                            <h4>PRAP</h4>
+                            <p>Prévention des risques liés à l'activité physique</p>
+                        </div>
+
+                        <div class="formation-item">
+                            <div class="formation-icon">🚪</div>
+                            <h4>Travaux en Espace Clos</h4>
+                            <p>Sécurité et procédures spécifiques</p>
+                        </div>
+
+                        <div class="formation-item">
+                            <div class="formation-icon">⚡</div>
+                            <h4>Défibrillateur</h4>
+                            <p>Utilisation du DAE en situation d'urgence</p>
+                        </div>
+
+                        <div class="formation-item">
+                            <div class="formation-icon">🧪</div>
+                            <h4>Risques Chimiques</h4>
+                            <p>Manipulation et prévention des produits chimiques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-box">
+                    <p class="cert-text">Formations certifiantes reconnues</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Volet 5 - Intérieur droite -->
+        <div class="panel panel-5">
+            <div class="geometric-bg-inner">
+                <div class="geo-shape-inner shape-inner-5"></div>
+            </div>
+
+            <div class="inner-content">
+                <div class="contact-section">
+                    <div class="contact-header">
+                        <div class="contact-icon-circle">📞</div>
+                        <div>
+                            <p class="contact-label">Téléphone</p>
+                            <p class="contact-value">+216 22 017 151</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-header">
+                        <div class="contact-icon-circle">✉️</div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <p class="contact-value">contact@o3consulting.com</p>
+                            <p class="contact-value-small">o3consulting.tn@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-header">
+                        <div class="contact-icon-circle">📍</div>
+                        <div>
+                            <p class="contact-label">Adresse SFAX</p>
+                            <p class="contact-value-small">1, Avenue Imam Sahnoun<br>Km7 Chihia - 3041 Sfax</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-header">
+                        <div class="contact-icon-circle">📍</div>
+                        <div>
+                            <p class="contact-label">Adresse TUNIS</p>
+                            <p class="contact-value-small">Le Maghreb Médical<br>Complexe SELMA 4 - Bloc B<br>3ème étage
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-header">
+                        <div class="contact-icon-circle">🌐</div>
+                        <div>
+                            <p class="contact-label">Site Web</p>
+                            <p class="contact-value">www.o3consulting.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Volet 6 - Dos couverture (à droite quand plié) -->
+        <div class="panel panel-6">
+            <div class="geometric-bg">
+                <div class="geo-shape shape-7"></div>
+                <div class="geo-shape shape-8"></div>
+                <div class="geo-shape shape-9"></div>
+            </div>
+
+            <div class="back-cover">
+                <div class="back-logo-section">
+                    <img src="logo.png" alt="O3 Consulting Logo" class="back-logo">
+                </div>
+
+                <div class="back-mission">
+                    <h2>Votre partenaire de confiance</h2>
+                    <h3>en Santé & Sécurité au Travail</h3>
+
+                    <div class="mission-points">
+                        <div class="mission-item">
+                            <span class="bullet">●</span>
+                            <p>Expertise reconnue</p>
+                        </div>
+                        <div class="mission-item">
+                            <span class="bullet">●</span>
+                            <p>Accompagnement personnalisé</p>
+                        </div>
+                        <div class="mission-item">
+                            <span class="bullet">●</span>
+                            <p>Solutions innovantes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back-footer">
+                    <p>La sécurité au travail, notre priorité</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
