@@ -17,7 +17,7 @@ const AllFormations = () => {
 
     return (
         <div className="min-h-screen bg-background pt-24 pb-20">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto">
                 {/* Page Header */}
                 <div className="mb-12">
                     <div className="flex flex-col md:flex-row justify-between items-start mb-6 gap-4">

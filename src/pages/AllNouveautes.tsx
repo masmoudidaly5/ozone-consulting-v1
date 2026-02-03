@@ -65,7 +65,7 @@ const AllNouveautes = () => {
 
     return (
         <div className="min-h-screen bg-background pt-24 pb-20">
-            <div className="container mx-auto px-6 md:px-12">
+            <div className="container mx-auto">
                 {/* Page Header */}
                 <div className="mb-12">
                     <Button

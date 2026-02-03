@@ -48,7 +48,7 @@ const Partners = () => {
     return (
         <>
             {/* Title Section with Hero Background */}
-            <section className="relative py-12 bg-white">
+            <section className="relative pt-4 pb-12 bg-white">
                 <div className="container mx-auto px-4 text-center relative z-10">
                     <h3 className="text-3xl md:text-4xl font-display font-bold text-primary">
                         Nos Références

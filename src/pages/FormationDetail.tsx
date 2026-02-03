@@ -30,7 +30,7 @@ const FormationDetail = () => {
 
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-primary to-primary/80 text-white pt-32 pb-20">
-                <div className="container mx-auto px-6 md:px-12">
+                <div className="container mx-auto">
                     <Button
                         variant="ghost"
                         className="mb-6 text-white hover:bg-white/20"
@@ -88,7 +88,7 @@ const FormationDetail = () => {
 
             {/* Main Content */}
             <section className="py-16">
-                <div className="container mx-auto px-6 md:px-12">
+                <div className="container mx-auto">
                     <div className="grid lg:grid-cols-3 gap-8">
                         {/* Main Content */}
                         <div className="lg:col-span-2 space-y-12">

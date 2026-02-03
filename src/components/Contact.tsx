@@ -16,14 +16,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="contact" className="relative py-24 bg-primary overflow-hidden">
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-primary">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-white">
             Contactez-Nous
           </h2>
           <div className="w-24 h-1.5 bg-accent mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
             Notre équipe est à votre disposition pour répondre à vos questions et vous accompagner dans vos projets
           </p>
         </div>
@@ -68,7 +68,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <Button
-                  className="w-full bg-accent hover:bg-accent/90 text-white mt-2"
+                  className="w-full bg-primary hover:bg-primary/90 text-white mt-2"
                   onClick={() => window.open('mailto:contact.O3consulting@gmail.com')}
                 >
                   <Mail className="mr-2 h-4 w-4" /> Envoyer un email

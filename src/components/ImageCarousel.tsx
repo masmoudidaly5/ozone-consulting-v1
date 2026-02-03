@@ -1,125 +1,125 @@
-import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { carouselSlides } from "@/data/carouselSlides";
+import { useState } from "react";
+import { Share2, Users, MessageSquare, Star, TrendingUp, CheckCircle2 } from "lucide-react";
 
 const ImageCarousel = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const [isPaused, setIsPaused] = useState(false);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-    // Auto-play functionality
-    useEffect(() => {
-        if (!isPaused) {
-            const interval = setInterval(() => {
-                setCurrentSlide((prev) => (prev + 1) % carouselSlides.length);
-            }, 5000); // Change slide every 5 seconds
+    const ratings = [
+        { id: 4, emoji: "😄", percent: 30, label: "Très satisfait", color: "text-green-600", bgColor: "bg-green-600", dashArray: "75.40 251.32", dashOffset: "0" },
+        { id: 3, emoji: "🙂", percent: 43, label: "Satisfait", color: "text-green-400", bgColor: "bg-green-400", dashArray: "108.07 251.32", dashOffset: "-75.40" },
+        { id: 2, emoji: "😐", percent: 23, label: "Neutre", color: "text-yellow-400", bgColor: "bg-yellow-400", dashArray: "57.80 251.32", dashOffset: "-183.47" },
+        { id: 1, emoji: "☹️", percent: 4, label: "Insatisfait", color: "text-orange-400", bgColor: "bg-orange-400", dashArray: "10.05 251.32", dashOffset: "-241.27" },
+    ];
 
-            return () => clearInterval(interval);
-        }
-    }, [isPaused]);
+    const stats = [
+        { value: "72%", label: "Taux de réponse", icon: <Share2 className="w-4 h-4 text-primary" /> },
+        { value: "185", label: "Total invitations", icon: <Users className="w-4 h-4 text-primary" /> },
+        { value: "134", label: "Réponses totales", icon: <MessageSquare className="w-4 h-4 text-primary" /> },
+        { value: "73%", label: "Score CSAT Global", icon: <Star className="w-4 h-4 text-primary" /> },
+    ];
 
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % carouselSlides.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + carouselSlides.length) % carouselSlides.length);
-    };
-
-    const goToSlide = (index: number) => {
-        setCurrentSlide(index);
-    };
+    const activeRating = hoveredIndex !== null ? ratings.find(r => r.id === hoveredIndex) : null;
 
     return (
-        <section className="py-2">
-            <div className="container mx-auto px-4 md:px-8">
-                {/* Carousel Container */}
-                <div
-                    className="relative overflow-hidden rounded-xl md:rounded-2xl shadow-2xl scale-[0.8] origin-center"
-                    onMouseEnter={() => setIsPaused(true)}
-                    onMouseLeave={() => setIsPaused(false)}
-                >
-                    {/* Slides */}
-                    <div className="relative h-[400px] md:h-[480px]">
-                        {carouselSlides.map((slide, index) => (
-                            <div
-                                key={slide.id}
-                                className={`absolute inset-0 transition-all duration-700 ease-in-out ${index === currentSlide
-                                    ? "opacity-100 translate-x-0"
-                                    : index < currentSlide
-                                        ? "opacity-0 -translate-x-full"
-                                        : "opacity-0 translate-x-full"
-                                    }`}
-                            >
-                                {/* Background Image */}
-                                <div className="absolute inset-0">
-                                    <img
-                                        src={slide.image}
-                                        alt={slide.title}
-                                        className="w-full h-full object-cover"
-                                    />
-                                    {/* Overlay Gradient - 10% opacity */}
-                                    <div className={`absolute inset-0 bg-gradient-to-r ${slide.color} opacity-10`}></div>
-                                </div>
+        <section id="temoignages" className="py-16 pb-8 bg-white relative overflow-hidden">
+            {/* Decorative background element */}
+            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl"></div>
 
-                                <div className="relative h-full flex items-end justify-center pb-16 md:pb-20">
-                                    <div className="px-6 md:px-8 w-full flex justify-center">
-                                        <div className="w-full max-w-md bg-black/15 backdrop-blur-sm p-4 md:p-5 rounded-xl">
-                                            <div className="mb-1.5">
-                                                <span className="inline-block bg-white/20 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1 text-white text-xs font-semibold shadow-sm">
-                                                    {slide.subtitle}
-                                                </span>
+            <div className="container mx-auto px-4 relative z-10">
+                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+                    {/* Visual Content (Left) */}
+                    <div className="w-full lg:w-1/2">
+                        <div className="relative group">
+                            <div className="absolute -inset-4 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition duration-500"></div>
+
+                            <div className="relative bg-white rounded-[2.5rem] shadow-strong p-8 md:p-12 border border-slate-50 flex flex-col items-center">
+                                {/* Doughnut Chart */}
+                                <div className="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
+                                    <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90 transform">
+                                        <circle cx="50" cy="50" r="40" fill="transparent" stroke="#f8fafc" strokeWidth="8" />
+                                        {ratings.map((rating) => (
+                                            <circle
+                                                key={rating.id}
+                                                cx="50" cy="50" r="40"
+                                                fill="transparent"
+                                                stroke="currentColor"
+                                                strokeWidth={hoveredIndex === rating.id ? "11" : "8"}
+                                                strokeDasharray={rating.dashArray}
+                                                strokeDashoffset={rating.dashOffset}
+                                                strokeLinecap="round"
+                                                className={`transition-all duration-300 cursor-pointer ${rating.color} ${hoveredIndex !== null && hoveredIndex !== rating.id ? 'opacity-20' : 'opacity-100'
+                                                    }`}
+                                                onMouseEnter={() => setHoveredIndex(rating.id)}
+                                                onMouseLeave={() => setHoveredIndex(null)}
+                                            />
+                                        ))}
+                                    </svg>
+
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+                                        {activeRating ? (
+                                            <div className="flex flex-col items-center animate-in fade-in zoom-in duration-300">
+                                                <span className="text-5xl mb-2 drop-shadow-sm">{activeRating.emoji}</span>
+                                                <span className={`text-4xl font-black ${activeRating.color}`}>{activeRating.percent}%</span>
+                                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">{activeRating.label}</span>
                                             </div>
-                                            <h2 className="text-2xl md:text-4xl font-bold text-white mb-2 drop-shadow-md">
-                                                {slide.title}
-                                            </h2>
-                                            <p className="text-xs md:text-sm text-white/95 mb-3 leading-relaxed drop-shadow-sm">
-                                                {slide.description}
-                                            </p>
-                                            <button
-                                                onClick={() => {
-                                                    const contactSection = document.querySelector('#contact');
-                                                    contactSection?.scrollIntoView({ behavior: 'smooth' });
-                                                }}
-                                                className="bg-white text-foreground hover:bg-white/90 font-semibold px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-xs md:text-sm"
-                                            >
-                                                En savoir plus
-                                            </button>
-                                        </div>
+                                        ) : (
+                                            <div className="flex flex-col items-center animate-in fade-in duration-500">
+                                                <span className="text-6xl font-black text-slate-900 leading-none">73%</span>
+                                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em] mt-3">Excellence Score</span>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        </div>
                     </div>
 
-                    {/* Navigation Arrows */}
-                    <button
-                        onClick={prevSlide}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white rounded-full p-3 transition-all duration-300 hover:scale-110 shadow-lg"
-                        aria-label="Previous slide"
-                    >
-                        <ChevronLeft className="w-6 h-6" />
-                    </button>
-                    <button
-                        onClick={nextSlide}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white rounded-full p-3 transition-all duration-300 hover:scale-110 shadow-lg"
-                        aria-label="Next slide"
-                    >
-                        <ChevronRight className="w-6 h-6" />
-                    </button>
+                    {/* Text Content (Right) */}
+                    <div className="w-full lg:w-1/2">
+                        <div className="space-y-8">
+                            {/* Badge */}
+                            <div className="inline-block px-4 py-1.5 bg-primary/5 border border-primary/10 rounded-full">
+                                <div className="flex items-center gap-2">
+                                    <TrendingUp className="w-4 h-4 text-primary" />
+                                    <span className="text-primary font-bold text-xs uppercase tracking-wider">Engagement Client</span>
+                                </div>
+                            </div>
 
-                    {/* Dot Indicators */}
-                    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
-                        {carouselSlides.map((_, index) => (
-                            <button
-                                key={index}
-                                onClick={() => goToSlide(index)}
-                                className={`transition-all duration-300 rounded-full ${index === currentSlide
-                                    ? "bg-white w-12 h-3"
-                                    : "bg-white/50 hover:bg-white/70 w-3 h-3"
-                                    }`}
-                                aria-label={`Go to slide ${index + 1}`}
-                            />
-                        ))}
+                            {/* Title & Description */}
+                            <div className="space-y-4">
+                                <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900 leading-tight">
+                                    Indicateurs de <br />
+                                    <span className="text-primary italic">Performance</span>
+                                </h2>
+                                <div className="w-20 h-1.5 bg-accent rounded-full"></div>
+                                <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
+                                    La satisfaction de nos clients est au cœur de notre stratégie.
+                                    Nous analysons chaque retour pour perfectionner nos interventions et vous offrir un service d'excellence.
+                                </p>
+                            </div>
+
+                            {/* Stats List */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                                {stats.map((stat, i) => (
+                                    <div key={i} className="flex items-start gap-4 group">
+                                        <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center shrink-0 group-hover:bg-primary/10 transition-colors border border-slate-100/50 shadow-sm">
+                                            {stat.icon}
+                                        </div>
+                                        <div className="space-y-0.5">
+                                            <div className="text-2xl font-black text-slate-900">{stat.value}</div>
+                                            <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">{stat.label}</div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Minimal Call to action */}
+                            <div className="flex items-center gap-2 text-primary font-bold text-sm pt-6 group cursor-default">
+                                <CheckCircle2 className="w-5 h-5" />
+                                <span>Données certifiées basées sur 134 retours récents</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

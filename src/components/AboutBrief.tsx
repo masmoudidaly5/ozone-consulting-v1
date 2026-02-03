@@ -8,11 +8,11 @@ const AboutBrief = () => {
 
     return (
         <section id="about-brief" className="py-24 bg-white relative">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Side: Visual Experience */}
                     <div className="relative order-2 lg:order-1">
-                        <div className="relative z-10 rounded-3xl overflow-hidden shadow-strong transform -rotate-2 hover:rotate-0 transition-all duration-500">
+                        <div className="relative z-10 rounded-3xl overflow-hidden shadow-strong transition-all duration-500">
                             <img
                                 src={aboutImage}
                                 alt="Expertise OZONE"
@@ -22,7 +22,7 @@ const AboutBrief = () => {
                         </div>
 
                         {/* Decorative Background Dots */}
-                        <div className="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+                        <div className="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl -z-10"></div>
                         <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-primary/5 rounded-full blur-3xl -z-10"></div>
                     </div>
 

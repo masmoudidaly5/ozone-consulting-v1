@@ -12,11 +12,22 @@ export interface CarouselSlide {
     title: string;
     subtitle: string;
     description: string;
-    image: string;
+    image?: string;
+    video?: string;
     color: string;
 }
 
+import underConstructionVideo from "@/assets/Under construction.webm";
+
 export const carouselSlides: CarouselSlide[] = [
+    {
+        id: 0,
+        title: "E-Platform",
+        subtitle: "Innovation Digitale",
+        description: "Découvrez notre nouvelle plateforme d'e-learning pour une formation moderne et interactive.",
+        video: underConstructionVideo,
+        color: "from-primary to-accent"
+    },
     {
         id: 1,
         title: "HSSE",

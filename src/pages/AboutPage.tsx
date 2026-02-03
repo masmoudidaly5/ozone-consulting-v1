@@ -33,7 +33,7 @@ const AboutPage = () => {
                         <div className="absolute inset-0 gradient-hero"></div>
                     </div>
 
-                    <div className="container mx-auto px-4 relative z-10">
+                    <div className="container mx-auto relative z-10">
                         <Button
                             variant="ghost"
                             onClick={() => navigate("/")}

@@ -117,7 +117,7 @@ All colors MUST be HSL.
   }
 
   .container {
-    @apply px-6 md:px-12;
+    @apply mx-auto px-8 md:px-16 lg:px-24 max-w-7xl;
   }
 
   h1,
