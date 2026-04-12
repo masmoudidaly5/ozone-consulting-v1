@@ -19,19 +19,30 @@ const AllFormations = () => {
         <div className="min-h-screen bg-background pt-24 pb-20">
             <div className="container mx-auto">
                 {/* Page Header */}
-                <div className="mb-12">
-                    <div className="flex flex-col md:flex-row justify-between items-start mb-6 gap-4">
+                <div className="mb-16">
+                    {/* Centered Title & Description - Now at the Top */}
+                    <div className="text-center max-w-4xl mx-auto mb-12">
+                        <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-primary leading-tight">
+                            Catalogue Complet des Formations
+                        </h1>
+                        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                            Découvrez l'ensemble de nos programmes de formation conçus pour renforcer la sécurité et les compétences de vos équipes.
+                        </p>
+                    </div>
+
+                    {/* Navigation Buttons Row - Pushed to extremities */}
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-border/50 pb-8">
                         <Button
                             variant="ghost"
                             onClick={() => navigate("/")}
-                            className="hover:bg-secondary/50"
+                            className="hover:bg-secondary/50 group flex items-center gap-3 px-4 py-6"
                         >
-                            <ArrowLeft className="mr-2 h-4 w-4" />
-                            Retour à l'accueil
+                            <ArrowLeft className="h-5 w-5 text-primary transition-transform group-hover:-translate-x-1" />
+                            <span className="text-lg font-medium text-primary">Retour à l'accueil</span>
                         </Button>
 
                         <Button
-                            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-w-[250px]"
+                            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-7 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-w-[300px]"
                             onClick={() => {
                                 triggerLoader(2000);
                                 setTimeout(() => {
@@ -39,84 +50,62 @@ const AllFormations = () => {
                                 }, 1000);
                             }}
                         >
-                            Télécharger le catalogue de formations
-                            <Download className="ml-2 h-5 w-5" />
+                            <span className="text-base">Télécharger le catalogue PDF</span>
+                            <Download className="ml-3 h-5 w-5" />
                         </Button>
-                    </div>
-
-                    <div className="text-center max-w-3xl mx-auto">
-                        <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-primary">
-                            Catalogue Complet des Formations
-                        </h1>
-                        <p className="text-lg text-muted-foreground">
-                            Découvrez l'ensemble de nos programmes de formation conçus pour renforcer la sécurité et les compétences de vos équipes.
-                        </p>
                     </div>
                 </div>
 
-                {/* Formations Grid */}
-                <div className="grid md:grid-cols-2 gap-8 mb-20 max-w-6xl mx-auto">
+                {/* Formations List - Flex layout to center orphans */}
+                <div className="flex flex-wrap justify-center gap-4 mb-20 max-w-7xl mx-auto">
                     {formations.map((formation) => {
                         return (
-                            <Card
-                                key={formation.id}
-                                className="shadow-lg hover:shadow-xl transition-all duration-300 border-none group overflow-hidden h-full flex flex-col bg-card"
-                            >
-                                {/* Image Section - Always visible, no blur overlay */}
-                                <div className="relative h-64 w-full overflow-hidden">
-                                    <img
-                                        src={formation.image}
-                                        alt={formation.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                                    />
-                                    {/* Badge Icon overlay on image */}
-                                    <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-primary shadow-sm">
-                                        {formation.icon}
+                            <div key={formation.id} className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] min-w-[280px] max-w-[320px] lg:max-w-none">
+                                <Card
+                                    className="shadow-md hover:shadow-lg transition-all duration-300 border-none group overflow-hidden h-full flex flex-col bg-card"
+                                >
+                                    {/* Image Section - Even more compact */}
+                                    <div className="relative h-40 w-full overflow-hidden">
+                                        <img
+                                            src={formation.image}
+                                            alt={formation.title}
+                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                        />
                                     </div>
-                                </div>
 
-                                <CardContent className="p-6 flex-1 flex flex-col">
-                                    {/* Technical Info Section (Ref, Duration, Level) */}
-                                    <div className="flex flex-wrap items-center justify-between gap-2 mb-4 text-sm">
-                                        <Badge variant="secondary" className="px-3 py-1">
-                                            Réf: {formation.reference}
-                                        </Badge>
-                                        <div className="flex items-center gap-2">
-                                            <Badge variant="outline" className="bg-background">
+                                    <CardContent className="p-4 flex-1 flex flex-col text-center">
+                                        {/* Technical Info Section - Centered */}
+                                        <div className="flex flex-wrap items-center justify-center gap-1 mb-3 text-[10px]">
+                                            <Badge variant="secondary" className="px-1.5 py-0">
+                                                Réf: {formation.reference}
+                                            </Badge>
+                                            <Badge variant="outline" className="bg-background border-primary/10 text-primary px-1.5 py-0">
                                                 {formation.duration}
                                             </Badge>
-                                            <Badge variant="outline" className="bg-background border-primary/20 text-primary">
-                                                {formation.level}
-                                            </Badge>
                                         </div>
-                                    </div>
 
-                                    {/* Separator */}
-                                    <div className="w-full h-px bg-border mb-6"></div>
+                                        {/* Title - Centered and fully visible */}
+                                        <div className="mb-4 flex-1 flex flex-col justify-center py-2">
+                                            <h3 className="text-sm md:text-base font-display font-bold text-foreground group-hover:text-primary transition-colors leading-tight text-center whitespace-pre-line">
+                                                {formation.title}
+                                            </h3>
+                                        </div>
 
-                                    {/* Title & Description */}
-                                    <div className="mb-6 flex-1">
-                                        <h3 className="text-2xl font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                                            {formation.title}
-                                        </h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            {formation.description}
-                                        </p>
-                                    </div>
-
-                                    {/* Action Button */}
-                                    <Button
-                                        className="w-full bg-primary hover:bg-primary/90 text-white mt-auto group-hover:translate-x-1 transition-all"
-                                        onClick={() => {
-                                            navigate(`/formation/${formation.id}`);
-                                            window.scrollTo({ top: 0, behavior: 'smooth' });
-                                        }}
-                                    >
-                                        En savoir plus
-                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                                    </Button>
-                                </CardContent>
-                            </Card>
+                                        {/* Action Button - Minimal */}
+                                        <Button
+                                            size="sm"
+                                            className="w-full bg-primary hover:bg-primary/90 text-white mt-auto py-4"
+                                            onClick={() => {
+                                                navigate(`/formation/${formation.id}`);
+                                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                                            }}
+                                        >
+                                            <span className="text-xs">Détails</span>
+                                            <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
+                                        </Button>
+                                    </CardContent>
+                                </Card>
+                            </div>
                         );
                     })}
                 </div>

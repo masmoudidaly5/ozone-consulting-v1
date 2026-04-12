@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { Menu, X, UserCircle, ChevronDown } from "lucide-react";
+import { Menu, X, UserCircle, ChevronDown, Globe } from "lucide-react";
 import logo from "@/assets/logo-ozone.png";
 import logoMobile from "@/assets/O3.png";
+import flagFR from "@/assets/FR.jpg";
+import flagEN from "@/assets/ENG.png";
+import flagTN from "@/assets/TN.png";
 import { useNavigate, useLocation } from "react-router-dom";
 import {
   DropdownMenu,
@@ -12,10 +16,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const Navigation = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    // RTL is handled in i18n/config.ts on languageChanged event
+  };
+
+  const languages = [
+    { code: 'fr', name: 'Français', flag: flagFR },
+    { code: 'en', name: 'English', flag: flagEN },
+    { code: 'ar', name: 'العربية', flag: flagTN },
+  ];
+
+  const currentLanguage = languages.find(l => l.code === i18n.language) || languages[0];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,19 +44,20 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Accueil", href: "/#home" },
-    { name: "À Propos", href: "/about" },
+    { name: t("nav.home"), href: "/#home" },
+    { name: t("nav.about"), href: "/about" },
     {
-      name: "Formations",
+      name: t("nav.formations"),
       href: "/formations",
       subItems: [
-        { name: "Toutes les formations", href: "/formations" },
-        { name: "Nouveautés (VR)", href: "/nouveautes" }
+        { name: t("nav.all_formations"), href: "/formations" },
+        { name: t("nav.nouveautes"), href: "/nouveautes" }
       ]
     },
-    { name: "Services", href: "/services" },
-    { name: "E-Platform", href: "/e-platform", badge: "Coming Soon" },
-    { name: "Contact", href: "/contact" },
+    { name: t("nav.services"), href: "/services" },
+    { name: t("nav.industries"), href: "/#industries" },
+    { name: t("nav.e_platform"), href: "/e-platform", badge: t("common.coming_soon") },
+    { name: t("nav.contact"), href: "/contact" },
   ];
 
   const handleNavigation = (href: string) => {
@@ -94,7 +113,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
             {navLinks.map((link) => (
               <div key={link.name} className="relative group">
                 {link.badge && (
@@ -128,13 +147,42 @@ const Navigation = () => {
                 )}
               </div>
             ))}
+
             <Button
               onClick={() => window.open('#', '_blank')}
               className="bg-accent hover:bg-accent/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <UserCircle className="w-4 h-4 mr-2" />
-              Espace Client
+              {t("nav.client_space")}
             </Button>
+
+            {/* Language Switcher - Extreme Right with Separator */}
+            <div className="pl-6 border-l border-slate-200/50 dark:border-white/10 ml-2">
+              <DropdownMenu>
+                <DropdownMenuTrigger className={`flex items-center font-medium transition-smooth hover:text-accent outline-none ${isScrolled || location.pathname !== "/" ? "text-foreground" : "text-white"}`}>
+                  <div className="w-6 h-4 overflow-hidden rounded-sm shadow-sm border border-white/20 mr-1.5 flex-shrink-0">
+                    <img src={currentLanguage.flag} alt={currentLanguage.name} className="w-full h-full object-cover" />
+                  </div>
+                  <ChevronDown className="h-3 w-3 opacity-50 flex-shrink-0" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="min-w-[150px]">
+                  {languages.map((lang) => (
+                    <DropdownMenuItem
+                      key={lang.code}
+                      onClick={() => changeLanguage(lang.code)}
+                      className="flex items-center gap-3 cursor-pointer py-2.5"
+                    >
+                      <div className="w-6 h-4 overflow-hidden rounded-sm border border-slate-200 flex-shrink-0">
+                        <img src={lang.flag} alt={lang.name} className="w-full h-full object-cover" />
+                      </div>
+                      <span className={`text-sm ${i18n.language === lang.code ? "font-bold text-accent" : "text-slate-600"}`}>
+                        {lang.name}
+                      </span>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -181,15 +229,37 @@ const Navigation = () => {
                 )}
               </div>
             ))}
+            {/* Mobile Language Switcher */}
+            <div className="border-t border-b border-secondary my-2">
+              <div className="flex items-center justify-around py-3">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => {
+                      changeLanguage(lang.code);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className={`flex flex-col items-center gap-1 p-2 rounded-lg transition-all ${i18n.language === lang.code ? "bg-accent/10 text-accent font-bold" : "text-foreground opacity-70"
+                      }`}
+                  >
+                    <div className="w-8 h-5 overflow-hidden rounded-sm shadow-sm border border-slate-200">
+                      <img src={lang.flag} alt={lang.name} className="w-full h-full object-cover" />
+                    </div>
+                    <span className="text-xs mt-1">{lang.name}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
             <button
               onClick={() => {
                 window.open('#', '_blank');
                 setIsMobileMenuOpen(false);
               }}
-              className="w-full text-left px-4 py-3 text-accent hover:bg-secondary transition-smooth font-semibold flex items-center gap-2"
+              className="w-full text-left px-4 py-3 text-accent hover:bg-secondary transition-smooth font-semibold flex items-center gap-2 rtl:flex-row-reverse rtl:text-right"
             >
               <UserCircle className="w-4 h-4" />
-              Espace Client
+              {t("nav.client_space")}
             </button>
           </div>
         )}

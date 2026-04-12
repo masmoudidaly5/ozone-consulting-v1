@@ -10,7 +10,7 @@ Created dedicated detail pages for each formation offered by OZONE CONSULTING, w
 - **Content**: 
   - TypeScript interface `Formation` defining the structure
   - Array of 6 formations with complete details:
-    1. Les Premiers secours Niv 1
+    1. Les Premiers secours Niveau 1
     2. Lutte contre les incendies
     3. Stockage et manipulation des produits chimiques
     4. Sécurité des Travaux en hauteur

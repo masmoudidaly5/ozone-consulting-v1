@@ -10,7 +10,6 @@ const ContactPage = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            <Navigation />
             <main className="pt-16">
                 <Contact />
             </main>

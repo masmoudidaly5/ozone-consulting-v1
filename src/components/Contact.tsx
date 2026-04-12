@@ -1,22 +1,17 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import heroImage from "@/assets/hero-safety.jpg";
 
 const Contact = () => {
   const [activeLocation, setActiveLocation] = useState<'sfax' | 'sousse'>('sfax');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form submission logic would go here
-    alert("Merci pour votre message ! Nous vous contacterons bientôt.");
-  };
-
   return (
     <section id="contact" className="relative py-24 bg-primary overflow-hidden">
+      {/* Decorative background blur */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[128px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[128px] pointer-events-none"></div>
+
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-white">
@@ -32,7 +27,7 @@ const Contact = () => {
           {/* Top Row: Phone & Email */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* Phone */}
-            <Card className="shadow-soft border border-gray-100 hover:border-accent/20 transition-all">
+            <Card className="shadow-2xl border border-gray-100 hover:border-accent/20 transition-all">
               <CardContent className="pt-6 h-full flex flex-col justify-between">
                 <div className="flex items-start space-x-4 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -55,7 +50,7 @@ const Contact = () => {
             </Card>
 
             {/* Email */}
-            <Card className="shadow-soft border border-gray-100 hover:border-accent/20 transition-all">
+            <Card className="shadow-2xl border border-gray-100 hover:border-accent/20 transition-all">
               <CardContent className="pt-6 h-full flex flex-col justify-between">
                 <div className="flex items-start space-x-4 mb-4">
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -78,7 +73,7 @@ const Contact = () => {
           </div>
 
           {/* Address with Map - Full Width */}
-          <Card className="shadow-soft border border-gray-100 hover:border-accent/20 transition-all overflow-hidden">
+          <Card className="shadow-2xl border border-gray-100 hover:border-accent/20 transition-all overflow-hidden">
             <CardContent className="p-0 flex flex-col md:flex-row h-[450px]">
               <div className="p-8 md:w-1/3 flex flex-col justify-center bg-slate-50/50">
                 <div className="flex items-start space-x-4 mb-6">
@@ -143,7 +138,7 @@ const Contact = () => {
               <div className="w-full md:w-2/3 bg-muted relative h-full">
                 {activeLocation === 'sfax' ? (
                   <iframe
-                    src="https://maps.google.com/maps?q=34.80349668667002,10.739440096167026&z=15&output=embed"
+                    src="https://maps.google.com/maps?q=34.80349668667002,10.739440096167026&z=15&t=k&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -155,7 +150,7 @@ const Contact = () => {
                   ></iframe>
                 ) : (
                   <iframe
-                    src="https://maps.google.com/maps?q=35.83918909793552,10.623131340283386&z=15&output=embed"
+                    src="https://maps.google.com/maps?q=35.83918909793552,10.623131340283386&z=15&t=k&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

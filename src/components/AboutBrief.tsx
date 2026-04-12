@@ -28,21 +28,18 @@ const AboutBrief = () => {
 
                     {/* Right Side: Content */}
                     <div className="space-y-10 order-1 lg:order-2">
-                        <div className="space-y-4">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 rounded-full text-primary font-bold text-xs uppercase tracking-tighter shadow-sm border border-slate-200">
-                                <Trophy className="w-3 h-3 text-accent" />
-                                Expertise Leaders en Tunisie
-                            </div>
-                            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-[1.1]">
-                                OZONE <span className="text-accent">Consulting</span> :<br />
-                                Votre Partenaire de Confiance
-                            </h2>
-                        </div>
 
-                        <p className="text-lg text-slate-600 leading-relaxed max-w-xl">
-                            Plus qu'un simple cabinet de conseil, nous sommes les gardiens de votre capitale humain.
-                            Notre mission est d'insuffler une culture de sécurité proactive au sein de votre organisation.
-                        </p>
+
+                        <div className="bg-slate-900 p-8 rounded-2xl shadow-xl">
+                            <h3 className="text-2xl font-display font-bold text-white mb-4">Welcome to Ozone,</h3>
+                            <p className="text-lg text-gray-200 leading-relaxed">
+                                Bienvenue chez Ozone. Nous sommes un cabinet de conseil et de formation tunisien fondé en 2020.
+                                Nous proposons des solutions innovantes et personnalisées, adaptées aux besoins de nos clients.
+                                Notre expertise couvre un large éventail de services, de la formation professionnelle au conseil stratégique
+                                en passant par le Management HSE. Nos experts accompagnent les entreprises vers une croissance durable
+                                et l'excellence opérationnelle.
+                            </p>
+                        </div>
 
                         {/* Core Values Grid */}
                         <div className="grid sm:grid-cols-2 gap-6">

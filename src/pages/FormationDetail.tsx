@@ -26,8 +26,6 @@ const FormationDetail = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            <Navigation />
-
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-primary to-primary/80 text-white pt-32 pb-20">
                 <div className="container mx-auto">
@@ -53,7 +51,7 @@ const FormationDetail = () => {
                             </div>
 
                             {/* Title */}
-                            <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
+                            <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 whitespace-pre-line">
                                 {formation.title}
                             </h1>
 

@@ -33,7 +33,7 @@ const Services = () => {
               </div>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
                 Nos Services de <br />
-                <span className="text-accent">Consulting HSSE</span>
+                <span className="text-accent">Consulting HSE</span>
               </h2>
               <div className="w-20 h-1.5 bg-accent rounded-full"></div>
 

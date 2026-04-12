@@ -1,0 +1,48 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "formations": "Formations",
+        "all_formations": "Toutes les formations",
+        "nouveautes": "Nouveautés (VR)",
+        "services": "Services",
+        "industries": "Secteurs",
+        "e_platform": "E-Platform",
+        "contact": "Contact",
+        "client_space": "Espace Client"
+    },
+    "common": {
+        "coming_soon": "Bientôt disponible",
+        "learn_more": "En savoir plus",
+        "details": "Détails"
+    },
+    "industries": {
+        "title": "Secteurs et industries",
+        "subtitle": "Ozone accompagne des clients dans",
+        "industries_count": "+20 Secteurs industriels",
+        "description": "Nos consultants-formateurs implémentent et forment simultanément. Ils garantissent que le savoir-faire est transféré, pas seulement la recommandation.",
+        "sectors": {
+            "oil_gas": "Pétrole & Gaz",
+            "auto_wiring": "Industrie Câblage Automobile",
+            "chem_pharma": "Chimie & Pharma",
+            "agro": "Agro-alimentaire",
+            "it_dev": "IT & Développement",
+            "education": "Secteur Éducation",
+            "printing": "Industrie d'Impression",
+            "metallurgy": "Industrie Métallurgique",
+            "manufacturing": "Industrie Manufacturière",
+            "energy": "Énergie & Électricité",
+            "construction": "Construction & BTP",
+            "logistics": "Logistique & Transport",
+            "textile": "Textile & Habillement",
+            "tourism": "Hôtellerie & Tourisme",
+            "health": "Santé & Services Médicaux",
+            "waste": "Gestion des Déchets",
+            "telecom": "Télécommunications"
+        }
+    },
+    "footer": {
+        "rights": "Tous droits réservés.",
+        "links": "Liens rapides"
+    }
+}

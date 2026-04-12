@@ -13,8 +13,8 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import EPlatform from "./pages/EPlatform";
 import PageLoader from "./components/PageLoader";
-
 import IntroAnimation from "./components/IntroAnimation";
+import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +26,7 @@ const App = () => (
       <BrowserRouter>
         <IntroAnimation />
         <PageLoader />
+        <Navigation />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutPage />} />

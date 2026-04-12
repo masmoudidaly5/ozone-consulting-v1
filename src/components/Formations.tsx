@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, GraduationCap, Users, ShieldCheck, Zap } from "lucide-react";
-import formationImage from "@/assets/formation-entreprise.jpg";
+import formationImage from "@/assets/Photos/Hutchinson.jpg";
 
 const Formations = () => {
   const navigate = useNavigate();
@@ -28,8 +28,8 @@ const Formations = () => {
                     <Users className="text-white h-6 w-6" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-primary">+1500</p>
-                    <p className="text-sm text-muted-foreground">Stagiaires formés / an</p>
+                    <p className="text-2xl font-bold text-primary">+850</p>
+                    <p className="text-sm text-muted-foreground">Stagiaires formés</p>
                   </div>
                 </div>
               </div>
@@ -44,7 +44,7 @@ const Formations = () => {
               </div>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
                 Développez vos <br />
-                <span className="text-accent">Compétences Sécurité</span>
+                <span className="text-accent">Compétences Santé & Sécurité</span>
               </h2>
               <div className="w-20 h-1.5 bg-accent rounded-full"></div>
 

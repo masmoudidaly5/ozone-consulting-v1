@@ -1,0 +1,48 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "formations": "Training",
+        "all_formations": "All Trainings",
+        "nouveautes": "What's New (VR)",
+        "services": "Services",
+        "industries": "Industries",
+        "e_platform": "E-Platform",
+        "contact": "Contact",
+        "client_space": "Client Login"
+    },
+    "common": {
+        "coming_soon": "Coming Soon",
+        "learn_more": "Learn more",
+        "details": "Details"
+    },
+    "industries": {
+        "title": "Sectors and Industries",
+        "subtitle": "Ozone supports clients in",
+        "industries_count": "+20 Industrial Sectors",
+        "description": "Ozone has successfully carried out multidisciplinary projects in various sectors, leveraging its expertise to achieve concrete results and a positive impact for its clients.",
+        "sectors": {
+            "oil_gas": "Oil & Gas",
+            "auto_wiring": "Automotive Wiring Industry",
+            "chem_pharma": "Chemical & Pharma",
+            "agro": "Agro-food",
+            "it_dev": "IT & Development",
+            "education": "Education Sector",
+            "printing": "Printing Industry",
+            "metallurgy": "Metallurgical Industry",
+            "manufacturing": "Manufacturing Industry",
+            "energy": "Energy & Electricity",
+            "construction": "Construction & Public Works",
+            "logistics": "Logistics & Transport",
+            "textile": "Textile & Clothing",
+            "tourism": "Hotel & Tourism",
+            "health": "Health & Medical Services",
+            "waste": "Waste Management",
+            "telecom": "Telecommunications"
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "links": "Quick Links"
+    }
+}

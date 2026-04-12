@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Bell } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
+import o3Logo from "@/assets/O3.png";
 import underConstructionVideo from "@/assets/Under construction.webm";
 
 const EPlatform = () => {
@@ -28,33 +29,28 @@ const EPlatform = () => {
                     playsInline
                     className="w-full h-full object-cover contrast-110 brightness-105"
                 />
-                {/* Overlay gradient for better text readability - Reduced opacity */}
-                <div className="absolute inset-0 bg-black/10"></div>
-            </div>
-
-            {/* Navigation Header */}
-            <div className="absolute top-0 left-0 right-0 p-6 flex justify-between items-center z-20">
-                <Button
-                    variant="ghost"
-                    onClick={() => navigate("/")}
-                    className="text-white hover:bg-white/20 hover:text-white drop-shadow-md"
-                >
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    Retour à l'accueil
-                </Button>
-
-                <Button
-                    className="bg-primary hover:bg-primary/90 text-white shadow-lg animate-pulse"
-                    onClick={() => navigate("/#contact")}
-                >
-                    <Bell className="mr-2 h-4 w-4" />
-                    Être notifié du lancement
-                </Button>
+                {/* Darker Vignette & Overlay gradients for better text readability */}
+                <div className="absolute inset-0 bg-black/30"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_10%,rgba(0,0,0,0.95)_100%)]"></div>
             </div>
 
             {/* Content - Moved to top and smaller text */}
             <div className="relative z-10 flex flex-col items-center justify-start min-h-screen text-center px-4 pt-32">
                 <div className="max-w-4xl space-y-6 animate-fade-in">
+                    {/* Rotating O3 Logo */}
+                    <div className="flex justify-center mb-8 animate-fade-in group">
+                        <div className="relative cursor-pointer">
+                            <img
+                                src={o3Logo}
+                                alt="O3"
+                                className="h-32 md:h-40 w-auto drop-shadow-2xl transition-all duration-500 ease-out group-hover:scale-125 group-hover:drop-shadow-[0_0_30px_rgba(16,185,129,0.5)] group-hover:brightness-110 animate-spin-slow"
+                                style={{ animationDuration: '20s' }}
+                            />
+                            {/* Glow effect on hover */}
+                            <div className="absolute inset-0 rounded-full bg-primary/0 group-hover:bg-primary/10 blur-xl transition-all duration-500"></div>
+                        </div>
+                    </div>
+
                     <h1 className="text-4xl md:text-5xl font-display font-bold text-white drop-shadow-2xl">
                         E-Platform
                     </h1>
