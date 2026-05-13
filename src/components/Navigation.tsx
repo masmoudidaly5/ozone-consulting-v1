@@ -55,7 +55,6 @@ const Navigation = () => {
       ]
     },
     { name: t("nav.services"), href: "/services" },
-    { name: t("nav.industries"), href: "/#industries" },
     { name: t("nav.e_platform"), href: "/e-platform", badge: t("common.coming_soon") },
     { name: t("nav.contact"), href: "/contact" },
   ];

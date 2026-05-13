@@ -4,6 +4,7 @@ import Nouveautes from "@/components/Nouveautes";
 import ImageCarousel from "@/components/ImageCarousel";
 import Formations from "@/components/Formations";
 import Industries from "@/components/Industries";
+
 import Contact from "@/components/Contact";
 import Partners from "@/components/Partners";
 import Footer from "@/components/Footer";
@@ -16,6 +17,7 @@ const Index = () => {
       <Services />
       <Nouveautes />
       <Industries />
+
       <ImageCarousel />
       <Partners />
       <Contact />

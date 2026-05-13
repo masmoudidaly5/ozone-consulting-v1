@@ -20,8 +20,12 @@ import newfood from "@/assets/logo/newfood.jpeg";
 import sidilec from "@/assets/logo/sidilec.jpg";
 import sumitomo from "@/assets/logo/sumitomo_e_bordnetze_tunisia_logo.jpeg";
 import tads from "@/assets/logo/TADS.jpg";
+import ansaldo from "@/assets/Logo/Ansaldo.jpg";
+
+import { useTranslation } from "react-i18next";
 
 const Partners = () => {
+    const { t } = useTranslation();
     const partners = [
         { name: "Sumitomo", logo: sumitomo, scale: 0.8 },
         { name: "Agroliva", logo: agroliva, scale: 1.4 },
@@ -43,26 +47,27 @@ const Partners = () => {
         { name: "Newpark", logo: newpark },
         { name: "Optylab", logo: optylab },
         { name: "TADS", logo: tads },
+        { name: "Ansaldo", logo: ansaldo },
     ];
 
     return (
         <>
             {/* Title Section with Hero Background */}
-            <section className="relative pt-4 pb-12 bg-white">
+            <section className="relative pt-4 pb-12 bg-background">
                 <div className="container mx-auto px-4 text-center relative z-10">
-                    <h3 className="text-3xl md:text-4xl font-display font-bold text-primary">
-                        Nos Références
+                    <h3 className="text-3xl md:text-4xl font-display font-bold text-white">
+                        {t("partners.title")}
                     </h3>
                     <div className="w-20 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
                 </div>
             </section>
 
             {/* Carousel Section with White Background */}
-            <section className="py-6 bg-white overflow-hidden">
+            <section className="py-6 bg-background overflow-hidden">
                 <div className="relative w-full overflow-hidden">
                     {/* Gradient masks for smooth fade effect on edges */}
-                    <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
-                    <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+                    <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10"></div>
+                    <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10"></div>
 
                     <div className="flex animate-scroll whitespace-nowrap hover:pause-animation w-max">
                         {/* Double the list for seamless infinite scrolling */}

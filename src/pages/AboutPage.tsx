@@ -10,8 +10,10 @@ import heroImage from "@/assets/hero-safety.jpg";
 import cnfcppLogo from "@/assets/logo/cnfcpp-logo.png";
 import o3Logo from "@/assets/O3.png";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -39,14 +41,13 @@ const AboutPage = () => {
                             className="mb-8 text-white hover:bg-white/10 hover:text-white"
                         >
                             <ArrowLeft className="mr-2 h-4 w-4" />
-                            Retour à l'accueil
+                            {t("about_page.back_home")}
                         </Button>
 
                         <div className="text-center mb-8">
 
                             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 text-white">
-                                OZONE <span className="text-accent">Consulting</span> :<br />
-                                Votre Partenaire de Confiance
+                                {t("about_page.title_part1")} <span className="text-accent">{t("about_page.title_part2")}</span>
                             </h1>
                             <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
                         </div>
@@ -55,11 +56,11 @@ const AboutPage = () => {
 
                 <AboutBrief />
 
-                <section className="relative py-20 overflow-hidden bg-slate-900">
+                <section className="relative py-20 overflow-hidden bg-[#033853]">
                     <div className="container mx-auto relative z-10">
                         <div className="text-center mb-12">
                             <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-                                L'Excellence au Service de la Sécurité
+                                {t("about.title")}
                             </h3>
                             <div className="w-24 h-1 bg-accent mx-auto"></div>
                         </div>
@@ -69,13 +70,13 @@ const AboutPage = () => {
                             <div className="space-y-6">
                                 <div className="space-y-4">
                                     <h4 className="text-xl font-display font-bold text-white">
-                                        Notre Approche
+                                        {t("about.approach_title")}
                                     </h4>
                                     <p className="text-gray-200 leading-relaxed">
-                                        OZONE CONSULTING s'est imposé comme un acteur majeur dans le domaine du consulting et de la formation en santé-sécurité au travail.
+                                        {t("about.approach_p1")}
                                     </p>
                                     <p className="text-gray-200 leading-relaxed">
-                                        Fort d'une expérience significative auprès d'entreprises industrielles, notre cabinet combine expertise technique et approche pédagogique.
+                                        {t("about.approach_p2")}
                                     </p>
                                 </div>
                             </div>
@@ -84,13 +85,13 @@ const AboutPage = () => {
                             <div className="space-y-6">
                                 <div className="space-y-4">
                                     <h4 className="text-xl font-display font-bold text-white">
-                                        Notre Engagement
+                                        {t("about.engagement_title")}
                                     </h4>
                                     <p className="text-gray-200 leading-relaxed">
-                                        Notre équipe de consultants et formateurs qualifiés accompagne les organisations dans leur démarche d'amélioration continue.
+                                        {t("about.engagement_p1")}
                                     </p>
                                     <p className="text-gray-200 leading-relaxed">
-                                        De la conception d'études de dangers à la mise en place de systèmes de management conformes aux normes internationales, nous vous guidons à chaque étape.
+                                        {t("about.engagement_p2")}
                                     </p>
                                 </div>
                             </div>
@@ -105,9 +106,9 @@ const AboutPage = () => {
                                             <img src={cnfcppLogo} alt="CNFCPP" className="w-full h-full object-contain" style={{ transform: 'scale(1.8)' }} />
                                         </div>
                                         <div className="flex-1 text-left">
-                                            <h3 className="text-lg font-display font-bold mb-1 text-foreground">Agréé par l'État</h3>
+                                            <h3 className="text-lg font-display font-bold mb-1 text-foreground">{t("about_page.accreditation_title")}</h3>
                                             <p className="text-sm text-muted-foreground">
-                                                Cabinet de formation agréé par le Centre National de Formation Continue et de Promotion Professionnelle sous le Numéro d'enregistrement: 61-455-24.
+                                                {t("about_page.accreditation_desc")}
                                             </p>
                                         </div>
                                     </div>

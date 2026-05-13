@@ -5,8 +5,11 @@ import isoImage from "@/assets/iso-45001.jpg";
 import heroImage from "@/assets/hero-safety.jpg";
 import cnfcppLogo from "@/assets/logo/cnfcpp-logo.png";
 import o3Logo from "@/assets/O3.png";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="relative py-20 overflow-hidden">
       {/* Background Image with Overlay */}
@@ -22,7 +25,7 @@ const About = () => {
         <div className="space-y-8">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
-              L'Excellence au Service de la Sécurité
+              {t("about.title")}
             </h3>
             <div className="w-24 h-1 bg-accent mx-auto"></div>
           </div>
@@ -40,13 +43,13 @@ const About = () => {
               </div>
               <div className="space-y-4">
                 <h4 className="text-xl font-display font-bold text-white">
-                  Notre Approche
+                  {t("about.approach_title")}
                 </h4>
                 <p className="text-gray-200 leading-relaxed">
-                  OZONE CONSULTING s'est imposé comme un acteur majeur dans le domaine du consulting et de la formation en santé-sécurité au travail.
+                  {t("about.approach_p1")}
                 </p>
                 <p className="text-gray-200 leading-relaxed">
-                  Fort d'une expérience significative auprès d'entreprises industrielles, notre cabinet combine expertise technique et approche pédagogique.
+                  {t("about.approach_p2")}
                 </p>
               </div>
             </div>
@@ -63,13 +66,13 @@ const About = () => {
               </div>
               <div className="space-y-4">
                 <h4 className="text-xl font-display font-bold text-white">
-                  Notre Engagement
+                  {t("about.engagement_title")}
                 </h4>
                 <p className="text-gray-200 leading-relaxed">
-                  Notre équipe de consultants et formateurs qualifiés accompagne les organisations dans leur démarche d'amélioration continue.
+                  {t("about.engagement_p1")}
                 </p>
                 <p className="text-gray-200 leading-relaxed">
-                  De la conception d'études de dangers à la mise en place de systèmes de management conformes aux normes internationales, nous vous guidons à chaque étape.
+                  {t("about.engagement_p2")}
                 </p>
               </div>
             </div>

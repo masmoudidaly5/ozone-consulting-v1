@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ShieldCheck, Zap, Users, Trophy } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import aboutImage from "@/assets/Consulting1.png";
+import { useTranslation } from "react-i18next";
 
 const AboutBrief = () => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     return (
-        <section id="about-brief" className="py-24 bg-white relative">
+        <section id="about-brief" className="py-24 bg-[#033853] relative">
             <div className="container mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left Side: Visual Experience */}
@@ -30,32 +32,28 @@ const AboutBrief = () => {
                     <div className="space-y-10 order-1 lg:order-2">
 
 
-                        <div className="bg-slate-900 p-8 rounded-2xl shadow-xl">
-                            <h3 className="text-2xl font-display font-bold text-white mb-4">Welcome to Ozone,</h3>
+                        <div className="bg-white/10 p-8 rounded-2xl shadow-xl border border-white/20">
+                            <h3 className="text-2xl font-display font-bold text-white mb-4">{t("about_brief.welcome")}</h3>
                             <p className="text-lg text-gray-200 leading-relaxed">
-                                Bienvenue chez Ozone. Nous sommes un cabinet de conseil et de formation tunisien fondé en 2020.
-                                Nous proposons des solutions innovantes et personnalisées, adaptées aux besoins de nos clients.
-                                Notre expertise couvre un large éventail de services, de la formation professionnelle au conseil stratégique
-                                en passant par le Management HSE. Nos experts accompagnent les entreprises vers une croissance durable
-                                et l'excellence opérationnelle.
+                                {t("about_brief.description")}
                             </p>
                         </div>
 
                         {/* Core Values Grid */}
                         <div className="grid sm:grid-cols-2 gap-6">
                             {[
-                                { icon: ShieldCheck, title: "Conformité", desc: "Respect strict des normes ISO et réglementations locales." },
-                                { icon: Zap, title: "Innovation", desc: "Utilisation de la VR pour des formations immersives." },
-                                { icon: Users, title: "Coaching", desc: "Accompagnement terrain personnalisé pour vos équipes." },
-                                { icon: Trophy, title: "Résultats", desc: "Réduction drastique des incidents et optimisation QHSE." }
+                                { icon: ShieldCheck, title: t("about_brief.compliance_title"), desc: t("about_brief.compliance_desc") },
+                                { icon: Zap, title: t("about_brief.innovation_title"), desc: t("about_brief.innovation_desc") },
+                                { icon: Users, title: t("about_brief.coaching_title"), desc: t("about_brief.coaching_desc") },
+                                { icon: Trophy, title: t("about_brief.results_title"), desc: t("about_brief.results_desc") }
                             ].map((value, idx) => (
-                                <div key={idx} className="group p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white hover:border-accent/40 hover:shadow-medium transition-all duration-300 flex items-start gap-4">
-                                    <div className="bg-white p-2 rounded-lg shadow-sm group-hover:bg-accent/10 transition-colors">
+                                <div key={idx} className="group p-5 bg-white/10 rounded-2xl border border-white/20 hover:bg-white/20 hover:border-accent/40 hover:shadow-medium transition-all duration-300 flex items-start gap-4">
+                                    <div className="bg-white/10 p-2 rounded-lg shadow-sm group-hover:bg-accent/10 transition-colors">
                                         <value.icon className="w-6 h-6 text-accent transition-transform group-hover:scale-110" />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-primary mb-1">{value.title}</h4>
-                                        <p className="text-xs text-slate-500 leading-normal">{value.desc}</p>
+                                        <h4 className="font-bold text-white mb-1">{value.title}</h4>
+                                        <p className="text-xs text-white/70 leading-normal">{value.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -69,7 +67,7 @@ const AboutBrief = () => {
                                     window.scrollTo(0, 0);
                                 }}
                             >
-                                Découvrir notre ADN
+                                {t("about_brief.cta")}
                                 <ArrowRight className="ml-3 h-5 w-5" />
                             </Button>
                         </div>

@@ -13,7 +13,6 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import EPlatform from "./pages/EPlatform";
 import PageLoader from "./components/PageLoader";
-import IntroAnimation from "./components/IntroAnimation";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -24,7 +23,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <IntroAnimation />
         <PageLoader />
         <Navigation />
         <Routes>

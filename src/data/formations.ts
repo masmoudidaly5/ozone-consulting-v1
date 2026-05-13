@@ -56,7 +56,7 @@ export const formations: Formation[] = [
             },
         ],
         prerequisites: "Aucun prérequis nécessaire",
-        certification: "Certificat de Sauveteur Secouriste du Travail (SST)",
+        certification: "Certificat de Premiers Secours",
         targetAudience: [
             "Tout personnel d'entreprise",
             "Membres du CHSCT",
@@ -569,42 +569,86 @@ export const formations: Formation[] = [
         reference: "#0012",
         icon: "⚗️",
         image: "/src/assets/produits-chimiques.jpg",
-        title: " Manipulation et Stockage des produits chimiques",
+        title: "Manipulation et Stockage des produits chimiques",
         description: "Maîtrise des bonnes pratiques pour manipuler et stocker les substances dangereuses en toute sécurité.",
-        duration: "1 jour",
-        level: "Opérateurs",
+        duration: "12 H",
+        level: "Tous niveaux",
         objectives: [
-            "Identifier les dangers des produits chimiques",
-            "Comprendre les pictogrammes et étiquetage",
-            "Appliquer les règles de stockage",
-            "Utiliser les équipements de protection",
+            "Identifier les risques liés aux produits chimiques",
+            "Rechercher des informations sur les produits dangereux",
+            "Assimiler les règles de prévention et de protection",
+            "Réagir en cas d'accident",
+            "Comprendre les risques présentés par les produits chimiques et leurs installations",
+            "Acquérir les bases d'une culture sécurité propre à la chimie",
+            "Diminuer le nombre et la gravité des accidents du travail",
         ],
         program: [
             {
-                title: "Réglementation et identification",
+                title: "Connaitre les dangers liés aux produits chimiques",
                 items: [
-                    "Réglementation sur les produits chimiques",
-                    "Lecture des FDS (Fiches de Données de Sécurité)",
-                    "Pictogrammes et étiquetage CLP",
-                    "Classification des produits dangereux",
+                    "Introduction aux caractéristiques physico-chimiques",
+                    "Dangers physiques et le risque incendie-explosion",
+                    "Dangers pour la santé (corrosion, intoxication)",
+                    "Dangers pour l'environnement",
                 ],
             },
             {
-                title: "Manipulation et stockage",
+                title: "Maitriser la manipulation des produits chimiques",
                 items: [
-                    "Règles de stockage et compatibilité",
-                    "Équipements de protection individuelle",
-                    "Procédures de manipulation sécurisée",
-                    "Gestion des déversements accidentels",
+                    "Analyse des informations de la FDS et recherche d'informations",
+                    "Le risque incendie, explosion",
+                    "Les risques liés au stockage (généralités, incompatibilité)",
+                    "Les risques liés aux déchets",
+                ],
+            },
+            {
+                title: "Les équipements de protection",
+                items: [
+                    "Protection collective et individuelle",
+                    "Protection des yeux et respiratoire",
+                    "Protection des mains et vêtements de protection",
+                ],
+            },
+            {
+                title: "Exercice : Analyse du poste de travail",
+                items: [
+                    "Nature des procédés et état physique des produits",
+                    "Degré d'émission et voies d'exposition",
+                    "Durée, fréquence et quantité de produit",
+                    "Performance des systèmes de sécurité existants",
+                ],
+            },
+            {
+                title: "Gestion des situations d'urgences",
+                items: [
+                    "Incendie / Accident / Déversement accidentel",
+                ],
+            },
+            {
+                title: "Matériel fourni par l'entreprise",
+                items: [
+                    "Échantillons d'EPI et de produits chimiques",
+                    "Fiches de Données de Sécurité (FDS)",
+                    "Bacs de rétention et kit de déversement",
+                    "Extincteurs de type ABC et CO2",
+                ],
+            },
+            {
+                title: "Méthodes et Moyens Pédagogiques",
+                items: [
+                    "Discussion, Exposé PowerPoint participatif",
+                    "Vidéos, films et cas pratiques",
+                    "Démonstrations et essais d'équipements",
+                    "Consignes de sécurité",
                 ],
             },
         ],
-        prerequisites: "Être amené à manipuler des produits chimiques",
+        prerequisites: "Aucun prérequis nécessaire",
         certification: "Attestation de formation",
         targetAudience: [
-            "Opérateurs de production",
-            "Personnel de maintenance",
-            "Magasiniers",
+            "Toute personne de l'entreprise",
+            "Opérateurs et techniciens",
+            "Responsables sécurité",
         ],
     },
     // 13. Sécurité des Travaux en hauteur
@@ -888,6 +932,172 @@ export const formations: Formation[] = [
             "Animateurs Sécurité",
             "Ingénieurs HSE",
             "Chefs d'entreprise",
+        ],
+    },
+    // 19. Lutte contre les incendies Recyclage
+    {
+        id: "lutte-incendies-recyclage",
+        reference: "#0019",
+        icon: "",
+        image: "/src/assets/Inc Recyclage.jpeg",
+        title: "Lutte contre les incendies (Recyclage)",
+        description: "Mise à jour des connaissances et des compétences pratiques pour la lutte contre les incendies.",
+        duration: "1 jour",
+        level: "Maintien des acquis",
+        objectives: [
+            "Réviser les fondamentaux de la lutte contre l'incendie",
+            "Actualiser les connaissances sur les agents extincteurs",
+            "Pratiquer la manipulation des extincteurs sur feux réels",
+            "Renforcer les réflexes d'évacuation"
+        ],
+        program: [
+            {
+                title: "Théorie - Rappels",
+                items: [
+                    "Le triangle du feu et propagation",
+                    "Les classes de feux et agents extincteurs",
+                    "L'organisation de l'évacuation",
+                ],
+            },
+            {
+                title: "Pratique - Exercices",
+                items: [
+                    "Manipulation des extincteurs sur bac à feu",
+                    "Utilisation des RIA (Robinets d'Incendie Armés)",
+                    "Mise en situation d'alerte et d'évacuation",
+                ],
+            },
+        ],
+        prerequisites: "Avoir suivi la formation initiale Lutte contre les incendies",
+        certification: "Attestation de recyclage",
+        targetAudience: [
+            "Équipiers de première intervention",
+            "Tout personnel ayant besoin d'un recyclage"
+        ],
+    },
+    // 20. Les premiers secours Recyclage
+    {
+        id: "premiers-secours-recyclage",
+        reference: "#0020",
+        icon: "",
+        image: "/src/assets/PS recyclage.jpg",
+        title: "Les premiers secours (Recyclage)",
+        description: "Maintien et actualisation des compétences du secouriste pour intervenir efficacement.",
+        duration: "1 jour",
+        level: "Maintien des acquis",
+        objectives: [
+            "Réviser les gestes d'urgence et de survie",
+            "Intégrer les nouvelles recommandations en secourisme",
+            "Valider la pratique du massage cardiaque et du DAE",
+            "Échanger sur les retours d'expériences"
+        ],
+        program: [
+            {
+                title: "Révision des gestes",
+                items: [
+                    "Protection et alerte",
+                    "La victime s'étouffe ou saigne",
+                    "La victime est inconsciente et respire",
+                ],
+            },
+            {
+                title: "Cas concrets et DAE",
+                items: [
+                    "Massage cardiaque et utilisation du DAE",
+                    "Mises en situation d'accidents du travail",
+                    "Évaluation des compétences",
+                ],
+            },
+        ],
+        prerequisites: "Être titulaire d'un certificat de Premiers Secours",
+        certification: "Attestation de recyclage",
+        targetAudience: [
+            "Secouristes désignés",
+            "Tout personnel souhaitant maintenir ses compétences"
+        ],
+    },
+    // 21. La sécurité au milieu de travail
+    {
+        id: "securite-milieu-travail",
+        reference: "#0021",
+        icon: "",
+        image: "/src/assets/Sécu milieu de travail.jpg",
+        title: "La sécurité au milieu de travail",
+        description: "Sensibilisation et bonnes pratiques pour garantir un environnement de travail sûr au quotidien.",
+        duration: "1 jour",
+        level: "Tous niveaux",
+        objectives: [
+            "Identifier les risques courants en milieu de travail",
+            "Adopter les comportements sécuritaires",
+            "Comprendre les signalisations et consignes de sécurité",
+            "Participer à la culture sécurité de l'entreprise"
+        ],
+        program: [
+            {
+                title: "Les fondamentaux",
+                items: [
+                    "Droits et devoirs en matière de sécurité",
+                    "Identification des dangers (chutes, manutention, bruit)",
+                    "Signalisation et équipements de protection",
+                ],
+            },
+            {
+                title: "Prévention au quotidien",
+                items: [
+                    "L'ordre et la propreté au poste",
+                    "Gestes et postures de base",
+                    "Que faire en cas d'anomalie ou d'incident ?",
+                ],
+            },
+        ],
+        prerequisites: "Aucun",
+        certification: "Attestation de sensibilisation",
+        targetAudience: [
+            "Nouveaux arrivants",
+            "Personnel de bureau et d'atelier",
+            "Intérimaires"
+        ],
+    },
+    // 22. Permis de travail
+    {
+        id: "permis-travail",
+        reference: "#0022",
+        icon: "",
+        image: "/src/assets/PTW.jpg",
+        title: "Permis de travail",
+        description: "Formation à la délivrance et au contrôle des permis de travail pour les opérations à risques.",
+        duration: "1 jour",
+        level: "Opérationnel",
+        objectives: [
+            "Comprendre l'utilité et le cadre légal du permis de travail",
+            "Savoir identifier les risques avant le début des travaux",
+            "Remplir et valider correctement les différents types de permis",
+            "Surveiller le respect des mesures de sécurité pendant l'activité"
+        ],
+        program: [
+            {
+                title: "Cadre et Typologie",
+                items: [
+                    "Pourquoi un permis de travail ?",
+                    "Les différents permis (feu, pénétration, hauteur, fouille)",
+                    "Responsabilités de l'émetteur et de l'exécutant",
+                ],
+            },
+            {
+                title: "Application pratique",
+                items: [
+                    "Analyse de risques préalable",
+                    "Vérification des conditions de sécurité sur site",
+                    "Clôture et restitution du permis",
+                ],
+            },
+        ],
+        prerequisites: "Connaissances des bases de la sécurité industrielle",
+        certification: "Attestation de formation",
+        targetAudience: [
+            "Chefs de chantiers et conducteurs de travaux",
+            "Superviseurs HSE",
+            "Donneurs d'ordres et chargés de travaux"
         ],
     },
 ];

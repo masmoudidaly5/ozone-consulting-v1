@@ -11,10 +11,1143 @@
         "contact": "Contact",
         "client_space": "Client Login"
     },
+    "about": {
+        "title": "Excellence in the Service of Safety",
+        "approach_title": "Our Approach",
+        "approach_p1": "OZONE CONSULTING has established itself as a major player in the field of occupational health and safety consulting and training.",
+        "approach_p2": "With significant experience supporting industrial companies, our firm combines technical expertise and pedagogical approach.",
+        "engagement_title": "Our Commitment",
+        "engagement_p1": "Our team of qualified consultants and trainers supports organizations in their continuous improvement process.",
+        "engagement_p2": "From designing hazard studies to implementing management systems based on international standards, we guide you every step of the way."
+    },
+    "about_brief": {
+        "welcome": "Welcome to Ozone,",
+        "description": "Welcome to Ozone. We are a Tunisian consulting and training firm founded in 2020. We offer innovative and personalized solutions adapted to our clients' needs. Our expertise covers a wide range of services, from vocational training to strategic consulting and HSE Management. Our experts support companies towards sustainable growth and operational excellence.",
+        "compliance_title": "Compliance",
+        "compliance_desc": "Strict adherence to ISO standards and local regulations.",
+        "innovation_title": "Innovation",
+        "innovation_desc": "Using VR for immersive training experiences.",
+        "coaching_title": "Coaching",
+        "coaching_desc": "Personalized field support for your teams.",
+        "results_title": "Results",
+        "results_desc": "Drastic reduction in incidents and QHSE optimization.",
+        "cta": "Discover our DNA"
+    },
+    "about_page": {
+        "back_home": "Back to Home",
+        "title_part1": "OZONE Consulting:",
+        "title_part2": "Your Trusted Partner",
+        "accreditation_title": "State Accredited",
+        "accreditation_desc": "Training firm accredited by the National Center for Continuing Education and Professional Promotion under registration number: 61-455-24."
+    },
+    "all_services": {
+        "title": "Our Services",
+        "description": "Comprehensive solutions to support your occupational health and safety projects.",
+        "services_list": {
+            "hazards": {
+                "title": "Hazard Studies",
+                "desc": "Complete identification and evaluation of risks to prevent accidents and improve the safety of your installations.",
+                "feat1": "Major risk identification",
+                "feat2": "Accident scenario analysis",
+                "feat3": "Prevention measures",
+                "feat4": "Safety improvement"
+            },
+            "classification": {
+                "title": "Classification File",
+                "desc": "Full support for the classification of your establishments and regulatory compliance.",
+                "feat1": "Compliance analysis",
+                "feat2": "File constitution",
+                "feat3": "Relations with administration",
+                "feat4": "Procedure monitoring"
+            },
+            "ergo": {
+                "title": "Ergonomic Study",
+                "desc": "In-depth analysis of workstations to prevent MSDs and optimize comfort and productivity.",
+                "feat1": "Activity analysis",
+                "feat2": "Workstation layout",
+                "feat3": "MSD prevention",
+                "feat4": "Workplace well-being"
+            },
+            "iso": {
+                "title": "Implementation <br/> ISO 45001 System",
+                "desc": "Implementation and certification of the occupational health and safety management system according to ISO 45001.",
+                "feat1": "Initial diagnostic",
+                "feat2": "ISO 45001 implementation",
+                "feat3": "Internal audit",
+                "feat4": "Certification support"
+            },
+            "iso9001": {
+                "title": "Implementation <br/> ISO 9001 System",
+                "desc": "Implementation and certification of the quality management system according to ISO 9001.",
+                "feat1": "Initial diagnostic",
+                "feat2": "ISO 9001 implementation",
+                "feat3": "Internal audit",
+                "feat4": "Certification support"
+            },
+            "iso14001": {
+                "title": "Implementation <br/> ISO 14001 System",
+                "desc": "Implementation and certification of the environmental management system according to ISO 14001.",
+                "feat1": "Initial diagnostic",
+                "feat2": "ISO 14001 implementation",
+                "feat3": "Internal audit",
+                "feat4": "Certification support"
+            },
+            "iso22000": {
+                "title": "Implementation <br/> ISO 22000 System",
+                "desc": "Implementation and certification of the food safety management system according to ISO 22000.",
+                "feat1": "Initial diagnostic",
+                "feat2": "ISO 22000 implementation",
+                "feat3": "Internal audit",
+                "feat4": "Certification support"
+            },
+            "risk": {
+                "title": "Risk Assessment",
+                "desc": "Methodical identification and evaluation of occupational risks for the development of your Risk Assessment Document.",
+                "feat1": "Risk inventory",
+                "feat2": "Rating and prioritization",
+                "feat3": "Prevention action plan"
+            },
+            "strategy": {
+                "title": "Strategic Consulting",
+                "desc": "Personalized support to optimize your processes and improve your safety performance.",
+                "feat1": "Process optimization",
+                "feat2": "Safety performance",
+                "feat3": "Tailored advice",
+                "feat4": "Monitoring and evaluation"
+            }
+        }
+    },
+    "formations_page": {
+        "title": "Complete Training Catalogue",
+        "description": "Discover our full range of training programs designed to strengthen your teams' safety and skills.",
+        "download_pdf": "Download PDF Catalogue",
+        "details": "Details",
+        "custom_title": "Tailor-made Training",
+        "custom_desc": "All our training courses can be adapted to your company's specific needs. We also offer tailor-made programs based on your operational constraints and your field of activity.",
+        "custom_cta": "Customize your training pack"
+    },
+    "formation_detail": {
+        "not_found": "Training not found",
+        "back_to_formations": "Back to training",
+        "objectives": "Training objectives",
+        "program": "Detailed program",
+        "practical_info": "Practical information",
+        "reference": "Reference",
+        "duration": "Duration",
+        "target_audience": "Target audience",
+        "prerequisites": "Prerequisites",
+        "certification": "Certification",
+        "get_quote": "Get a quote"
+    },
+    "formations": {
+        "premiers-secours": {
+            "title": "First Aid Level 1",
+            "description": "Training in life-saving gestures to intervene effectively in case of an accident.",
+            "duration": "2 days",
+            "level": "All levels",
+            "objectives": [
+                "Master first aid gestures",
+                "Know how to alert emergency services effectively",
+                "Manage an emergency situation while waiting for help",
+                "Prevent risks of aggravation"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - First Aid Basics",
+                    "items": [
+                        "Protection, prevention and alert",
+                        "Choking victim",
+                        "Bleeding victim",
+                        "Unconscious victim"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Emergency Situations",
+                    "items": [
+                        "Non-breathing victim",
+                        "Illness or malaise",
+                        "Burns",
+                        "Wounds",
+                        "Practical scenarios"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "All company personnel",
+                "Safety committee members",
+                "Security teams"
+            ]
+        },
+        "premiers-secours-niveau-2": {
+            "title": "First Aid Level 2 (Advanced)",
+            "description": "Advanced team first aid training, including lifting, securing, and stretchering.",
+            "duration": "4 days",
+            "level": "Advanced",
+            "objectives": [
+                "Master advanced team first aid techniques",
+                "Ensure lifting and securing of a victim",
+                "Perform safe stretchering",
+                "Coordinate team interventions"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Review and Advanced Techniques",
+                    "items": [
+                        "Review of basic gestures",
+                        "In-depth primary and secondary assessment",
+                        "Management of life-threatening distress",
+                        "Team intervention communication"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Advanced Team First Aid",
+                    "items": [
+                        "Team resuscitation techniques",
+                        "Management of severe bleeding",
+                        "Immobilization of complex fractures",
+                        "Management of multiple traumas"
+                    ]
+                },
+                {
+                    "title": "Day 3 - Lifting and Securing",
+                    "items": [
+                        "Safe lifting techniques",
+                        "Securing on hard boards",
+                        "Vacuum mattress use",
+                        "Spinal immobilization"
+                    ]
+                },
+                {
+                    "title": "Day 4 - Stretchering and Scenarios",
+                    "items": [
+                        "Stretchering techniques in difficult terrain",
+                        "Team coordination during transport",
+                        "Obstacle crossing",
+                        "Complex scenarios"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Experienced first-aiders",
+                "Company emergency teams",
+                "Medical and paramedical personnel",
+                "Volunteer firefighters"
+            ]
+        },
+        "utilisation-dae": {
+            "title": "Use of an Automated External Defibrillator (AED)",
+            "description": "Training in the use of the automated external cardiac defibrillator to intervene in case of cardiac arrest.",
+            "duration": "2 days",
+            "level": "All levels",
+            "objectives": [
+                "Recognize cardiac arrest",
+                "Use an automated external defibrillator (AED)",
+                "Practice cardiopulmonary resuscitation (CPR)",
+                "Coordinate intervention with emergency services"
+            ],
+            "program": [
+                {
+                    "title": "Morning - Theory and Recognition",
+                    "items": [
+                        "Heart anatomy and physiology",
+                        "Recognizing cardiac arrest",
+                        "Chain of survival",
+                        "AED operation",
+                        "Regulations and responsibilities"
+                    ]
+                },
+                {
+                    "title": "Afternoon - Practice",
+                    "items": [
+                        "AED deployment",
+                        "Cardiopulmonary resuscitation (CPR)",
+                        "CPR and AED coordination",
+                        "Practical scenarios",
+                        "Special cases and precautions"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "All company personnel",
+                "First-aiders",
+                "Reception staff",
+                "Site managers"
+            ]
+        },
+        "lutte-incendies": {
+            "title": "Fire Fighting Level 1",
+            "description": "Learning prevention and fire extinguishing techniques.",
+            "duration": "2 days",
+            "level": "All levels",
+            "objectives": [
+                "Understand the combustion phenomenon",
+                "Identify different types of fires",
+                "Use appropriate extinguishers",
+                "Evacuate safely"
+            ],
+            "program": [
+                {
+                    "title": "Theoretical Part",
+                    "items": [
+                        "Fire triangle and fire classes",
+                        "Extinguishing agents and their use",
+                        "Fire protection equipment",
+                        "Evacuation instructions"
+                    ]
+                },
+                {
+                    "title": "Practical Part",
+                    "items": [
+                        "Extinguisher handling",
+                        "Live fire exercises",
+                        "Evacuation simulation",
+                        "Use of fire hose reels (RIA)"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "First intervention teams",
+                "Company personnel",
+                "Safety managers"
+            ]
+        },
+        "lutte-incendies-niveau-2": {
+            "title": "Fire Fighting Level 2",
+            "description": "Advanced fire fighting training: hose deployment, foam and emulsifiers, hydrocarbon fires, gas leaks, and SCBA.",
+            "duration": "3 days",
+            "level": "Advanced",
+            "objectives": [
+                "Master the deployment of flexible hoses",
+                "Use foam emulsifiers and extinguishers",
+                "Intervene in hydrocarbon fires and gas leaks",
+                "Use Self-Contained Breathing Apparatus (SCBA)"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Advanced Techniques and Deployment",
+                    "items": [
+                        "Review of fire fighting fundamentals",
+                        "Flexible hose deployment",
+                        "Rapid deployment techniques",
+                        "Fire nozzle maneuvers"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Special Fires and Emulsifiers",
+                    "items": [
+                        "Hydrocarbon fires: specifics and dangers",
+                        "Emulsifiers and foam extinguishers",
+                        "Foam extinction techniques",
+                        "Gas leak management",
+                        "Gas leak intervention procedures"
+                    ]
+                },
+                {
+                    "title": "Day 3 - Self-Contained Breathing Apparatus (SCBA)",
+                    "items": [
+                        "SCBA operation and verification",
+                        "Equipment and deployment",
+                        "Intervention in smoke-filled atmospheres",
+                        "Autonomy management and rescue procedures",
+                        "Real-world practical exercises"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Second intervention teams",
+                "Company firefighters",
+                "Fire safety managers",
+                "SEVESO site personnel"
+            ]
+        },
+        "charges-evacuation": {
+            "title": "Evacuation Officers",
+            "description": "Training for those responsible for evacuation in case of emergency, including people management and evacuation procedures.",
+            "duration": "1 day",
+            "level": "Management",
+            "objectives": [
+                "Know the role and missions of the evacuation officer",
+                "Master evacuation procedures",
+                "Manage stress and communication in emergency situations",
+                "Perform counting and accompaniment of people"
+            ],
+            "program": [
+                {
+                    "title": "Morning - Regulatory Framework and Role",
+                    "items": [
+                        "Evacuation regulations",
+                        "Role and responsibilities of the evacuation officer",
+                        "Organization of evacuation in the company",
+                        "Fire safety instructions"
+                    ]
+                },
+                {
+                    "title": "Afternoon - Procedures and Practice",
+                    "items": [
+                        "Evacuation procedures and assembly points",
+                        "Communication techniques in emergency situations",
+                        "Management of people with reduced mobility",
+                        "Practical evacuation exercise"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Designated evacuation officers",
+                "Works council members",
+                "Team leaders",
+                "Management personnel"
+            ]
+        },
+        "equipe-premiere-intervention": {
+            "title": "First Intervention Team (FIT)",
+            "description": "Complete training for first intervention teams facing the beginnings of a fire.",
+            "duration": "3 days",
+            "level": "Operators",
+            "objectives": [
+                "Intervene quickly in the beginning of a fire",
+                "Master all first intervention means",
+                "Coordinate actions with the team",
+                "Ensure people's safety"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Fundamentals and Theory",
+                    "items": [
+                        "FIT regulation and role",
+                        "Fire theory and fire classes",
+                        "Extinction means and agents",
+                        "Fire protection equipment",
+                        "Intervention organization"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Extinction Means Practice",
+                    "items": [
+                        "Portable extinguisher handling",
+                        "Use of fire hose reels (RIA)",
+                        "Extinction techniques on live fires",
+                        "Biped progression",
+                        "Communication and coordination"
+                    ]
+                },
+                {
+                    "title": "Day 3 - Scenarios",
+                    "items": [
+                        "Incident recognition and assessment",
+                        "Coordinated team intervention",
+                        "Management of complex situations",
+                        "Evacuation and securing",
+                        "Practical assessment"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "First intervention teams",
+                "Security personnel",
+                "Maintenance agents",
+                "Site managers"
+            ]
+        },
+        "equipe-seconde-intervention": {
+            "title": "Second Intervention Team (SIT)",
+            "description": "Advanced training for second intervention teams capable of managing large fires.",
+            "duration": "3 days",
+            "level": "Advanced",
+            "objectives": [
+                "Intervene in developed fires",
+                "Use Self-Contained Breathing Apparatus (SCBA)",
+                "Master advanced extinction techniques",
+                "Coordinate with external emergency services"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Advanced Techniques",
+                    "items": [
+                        "SIT role and missions",
+                        "Dangerous thermal phenomena",
+                        "Nozzle and hose deployment",
+                        "Ventilation techniques",
+                        "Reconnaissance under SCBA"
+                    ]
+                },
+                {
+                    "title": "Day 2 - SCBA and Intervention",
+                    "items": [
+                        "SCBA: use and progression",
+                        "Progression in smoke-filled atmospheres",
+                        "Rescue and evacuation",
+                        "Air autonomy management",
+                        "SCBA rescue procedures"
+                    ]
+                },
+                {
+                    "title": "Day 3 - Coordination and Exercises",
+                    "items": [
+                        "Command and team coordination",
+                        "Interface with firefighters",
+                        "Real-world practical exercises",
+                        "Complex incident management",
+                        "Final assessment"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Second intervention teams",
+                "Company firefighters",
+                "Fire safety managers",
+                "Risk-site personnel"
+            ]
+        },
+        "plan-operations-interne": {
+            "title": "Internal Operations Plan (IOP)",
+            "description": "Training in the development and implementation of the Internal Operations Plan for high-risk establishments.",
+            "duration": "2 days",
+            "level": "Management",
+            "objectives": [
+                "Understand IOP regulatory obligations",
+                "Develop a tailored Internal Operations Plan",
+                "Organize crisis management",
+                "Test and improve the IOP"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Regulatory Framework and Development",
+                    "items": [
+                        "ICPE installation regulation",
+                        "IOP legal obligations",
+                        "Risk analysis and accident scenarios",
+                        "IOP structure and content",
+                        "Crisis cell organization"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Implementation and Exercises",
+                    "items": [
+                        "Alert and mobilization procedures",
+                        "Coordination with external help",
+                        "Crisis communication management",
+                        "IOP simulation exercises",
+                        "Experience feedback and continuous improvement"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Establishment directors",
+                "HSE managers",
+                "SEVESO site managers",
+                "Crisis cell members"
+            ]
+        },
+        "prevention-levage-manutention": {
+            "title": "Prevention of Risks Related to Physical Activities (Lifting and Handling)",
+            "description": "Training on best practices for lifting, handling, and preventing musculoskeletal disorders.",
+            "duration": "1 day",
+            "level": "All levels",
+            "objectives": [
+                "Identify risks related to lifting gestures",
+                "Apply safe handling techniques",
+                "Use lifting aid equipment",
+                "Prevent MSDs and accidents"
+            ],
+            "program": [
+                {
+                    "title": "Theory and Regulation",
+                    "items": [
+                        "Biomechanical risks of lifting",
+                        "Norms and legal obligations",
+                        "Station assessment"
+                    ]
+                },
+                {
+                    "title": "Practical Workshop",
+                    "items": [
+                        "Lifting equipment demonstration",
+                        "Handling scenarios",
+                        "Gesture analysis and corrections"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Production operators",
+                "Maintenance technicians",
+                "Logistics personnel"
+            ]
+        },
+        "ergonomie-ecran": {
+            "title": "Ergonomics and Screen Work",
+            "description": "Optimization of the computer workstation to prevent musculoskeletal disorders related to screens.",
+            "duration": "1 day",
+            "level": "All levels",
+            "objectives": [
+                "Understand risks related to screen work",
+                "Adopt correct postures in front of the computer",
+                "Arrange the workstation ergonomically",
+                "Integrate active breaks"
+            ],
+            "program": [
+                {
+                    "title": "Ergonomic Principles",
+                    "items": [
+                        "Workstation analysis",
+                        "Furniture and equipment adjustment",
+                        "Lighting and contrast management"
+                    ]
+                },
+                {
+                    "title": "Exercises and Best Practices",
+                    "items": [
+                        "Stretching exercises",
+                        "Active micro-breaks",
+                        "Screen time management"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Office personnel",
+                "IT operators",
+                "All employees exposed to screens"
+            ]
+        },
+        "produits-chimiques": {
+            "title": "Handling and Storage of Chemical Products",
+            "description": "Mastering best practices for handling and storing dangerous substances safely.",
+            "duration": "12 H",
+            "level": "All levels",
+            "objectives": [
+                "Identify risks related to chemical products",
+                "Search for information on hazardous products",
+                "Assimilate prevention and protection rules",
+                "React in case of an accident",
+                "Understand risks presented by chemicals and their installations",
+                "Acquire the basics of a safety culture specific to chemistry",
+                "Decrease the number and severity of workplace accidents"
+            ],
+            "program": [
+                {
+                    "title": "Know the dangers related to hazardous chemical products",
+                    "items": [
+                        "Introduction to physico-chemical characteristics",
+                        "Physical hazards and fire-explosion risk",
+                        "Health hazards (corrosion, intoxication)",
+                        "Environmental hazards"
+                    ]
+                },
+                {
+                    "title": "Master the handling of chemical products",
+                    "items": [
+                        "Analysis of SDS information and info search",
+                        "Fire and explosion risk",
+                        "Risks related to storage (generalities, incompatibility)",
+                        "Risks related to waste"
+                    ]
+                },
+                {
+                    "title": "Protection equipment",
+                    "items": [
+                        "Collective and individual protection",
+                        "Eye and respiratory protection",
+                        "Hand protection and protective clothing"
+                    ]
+                },
+                {
+                    "title": "Exercise: Workstation analysis",
+                    "items": [
+                        "Nature of processes and physical state of products",
+                        "Emission degree and exposure routes",
+                        "Duration, frequency and quantity of product",
+                        "Performance of existing safety systems"
+                    ]
+                },
+                {
+                    "title": "Emergency situation management",
+                    "items": [
+                        "Fire / Accident / Accidental spill"
+                    ]
+                },
+                {
+                    "title": "Equipment provided by the company",
+                    "items": [
+                        "PPE and chemical product samples",
+                        "Safety Data Sheets (SDS)",
+                        "Retention basins and spill kit",
+                        "ABC and CO2 type extinguishers"
+                    ]
+                },
+                {
+                    "title": "Pedagogical Methods and Means",
+                    "items": [
+                        "Discussion, participatory PowerPoint presentation",
+                        "Videos, films and practical cases",
+                        "Equipment demonstrations and tests",
+                        "Safety instructions"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "All company personnel",
+                "Operators and technicians",
+                "Security managers"
+            ]
+        },
+        "travaux-hauteur": {
+            "title": "Safety in Working at Height",
+            "description": "Training in safe techniques for working at elevation.",
+            "duration": "2 days",
+            "level": "Operators",
+            "objectives": [
+                "Identify risks related to working at height",
+                "Use fall arrest PPE",
+                "Implement securing techniques",
+                "Intervene in case of an accident"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Theory and Regulation",
+                    "items": [
+                        "Working at height regulation",
+                        "Fall risks and consequences",
+                        "Fall arrest PPE (harness, lanyards)",
+                        "Anchor points and lifelines"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Practice",
+                    "items": [
+                        "PPE verification and use",
+                        "Height progression techniques",
+                        "On-site scenarios",
+                        "Rescue and evacuation procedures"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Maintenance technicians",
+                "Roofers and carpenters",
+                "Personnel working at height"
+            ]
+        },
+        "evaluation-dangers": {
+            "title": "Hazard Identification and Assessment",
+            "description": "Methodology for detecting, analyzing, and prioritizing occupational risks.",
+            "duration": "2 days",
+            "level": "Management",
+            "objectives": [
+                "Master hazard identification methods",
+                "Assess and prioritize risks",
+                "Develop the unique document",
+                "Propose prevention measures"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Methodology",
+                    "items": [
+                        "Risk assessment regulatory framework",
+                        "Concepts: hazard, risk, damage",
+                        "Hazard identification methods",
+                        "Risk assessment tools"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Practice",
+                    "items": [
+                        "Work situation analysis",
+                        "Risk rating and prioritization",
+                        "Single Document (DUER) development",
+                        "Action plan and prevention measures"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "HSE managers",
+                "Managers and team leaders",
+                "Safety committee members",
+                "Safety officers"
+            ]
+        },
+        "espaces-confines": {
+            "title": "Working in Confined Spaces",
+            "description": "Training in safety procedures for intervening in confined spaces.",
+            "duration": "2 days",
+            "level": "Operators",
+            "objectives": [
+                "Identify risks related to confined spaces",
+                "Apply safe entry procedures",
+                "Use protection and detection equipment",
+                "Manage emergency situations in confined spaces"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Theory and Regulation",
+                    "items": [
+                        "Confined space definition and identification",
+                        "Regulation and legal obligations",
+                        "Specific hazards (atmosphere, toxicity)",
+                        "Detection and protection equipment",
+                        "Entry permit procedures"
+                    ]
+                },
+                {
+                    "title": "Day 2 - Practice and Intervention",
+                    "items": [
+                        "Pre-intervention risk assessment",
+                        "Safety measures implementation",
+                        "Gas detector use",
+                        "Ventilation techniques",
+                        "Rescue and evacuation procedures",
+                        "Practical scenarios"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Maintenance operators",
+                "Intervention personnel",
+                "Security teams",
+                "Confined space monitors"
+            ]
+        },
+        "securite-chantier": {
+            "title": "Construction Site Safety",
+            "description": "Training in safety rules on construction and public works sites.",
+            "duration": "1 day",
+            "level": "All levels",
+            "objectives": [
+                "Identify construction-specific risks",
+                "Apply site safety rules",
+                "Use collective and personal protection equipment",
+                "Know construction site signaling"
+            ],
+            "program": [
+                {
+                    "title": "Morning - Risks and Regulation",
+                    "items": [
+                        "BTP construction site regulation",
+                        "Main site risks",
+                        "Falls from height and ground level",
+                        "Machine and vehicle risks",
+                        "Electrical and burial risks"
+                    ]
+                },
+                {
+                    "title": "Afternoon - Prevention and Protection",
+                    "items": [
+                        "Personal Protective Equipment (PPE)",
+                        "Collective protection",
+                        "Site signaling and marking",
+                        "Prevention plan and PPSPS",
+                        "Conduct in case of an accident"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "BTP workers",
+                "Site managers",
+                "Works supervisors",
+                "HSE coordinators"
+            ]
+        },
+        "epi": {
+            "title": "Personal Protective Equipment (PPE)",
+            "description": "Training in the use, maintenance, and selection of personal protective equipment.",
+            "duration": "1 day",
+            "level": "All levels",
+            "objectives": [
+                "Understand the importance of PPE",
+                "Choose PPE adapted to risks",
+                "Correctly use and maintain PPE",
+                "Know current regulations"
+            ],
+            "program": [
+                {
+                    "title": "Theory and Regulation",
+                    "items": [
+                        "General principles of prevention",
+                        "Different PPE categories",
+                        "Employer/Employee responsibilities",
+                        "Marking and compliance"
+                    ]
+                },
+                {
+                    "title": "Practice and Use",
+                    "items": [
+                        "Job-specific PPE presentation",
+                        "Pre-use verification",
+                        "Wear and adjustment rules",
+                        "Maintenance and storage"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "All employees",
+                "Team leaders",
+                "Security managers",
+                "Warehouse workers"
+            ]
+        },
+        "cycle-responsable-hse": {
+            "title": "HSE Manager Cycle",
+            "description": "Complete training to master the fundamentals of the Health, Safety and Environment Manager profession.",
+            "duration": "5 days",
+            "level": "Expert",
+            "objectives": [
+                "Master the HSE regulatory framework",
+                "Know how to assess and manage occupational risks",
+                "Implement and lead an HSE management system",
+                "Develop a safety culture in the company"
+            ],
+            "program": [
+                {
+                    "title": "Day 1 - Regulatory Framework and Responsibilities",
+                    "items": [
+                        "HSE regulatory watch",
+                        "Civil and criminal responsibilities",
+                        "Prevention actors",
+                        "The Single Document (DUER)"
+                    ]
+                },
+                {
+                    "title": "Day 2 & 3 - Risk Management and Operational",
+                    "items": [
+                        "Risk analysis (chemical, fire, psychosocial...)",
+                        "Fire permits, prevention plans",
+                        "Management of external companies",
+                        "Accident analysis"
+                    ]
+                },
+                {
+                    "title": "Day 4 & 5 - Management and Communication",
+                    "items": [
+                        "ISO 14001 and ISO 45001 standards",
+                        "Audit and management review",
+                        "Communication and HSE leadership",
+                        "Crisis management"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Future HSE managers",
+                "Safety facilitators",
+                "HSE engineers",
+                "Business owners"
+            ]
+        },
+        "lutte-incendies-recyclage": {
+            "title": "Fire Safety\n(Recyclage)",
+            "description": "Updating knowledge and practical skills for firefighting.",
+            "duration": "1 day",
+            "level": "Refresher",
+            "objectives": [
+                "Review the fundamentals of firefighting",
+                "Update knowledge on extinguishing agents",
+                "Practice the manipulation of extinguishers on real fires",
+                "Strengthen evacuation reflexes"
+            ],
+            "program": [
+                {
+                    "title": "Theory - Reminders",
+                    "items": [
+                        "The fire triangle and propagation",
+                        "Fire classes and extinguishing agents",
+                        "Evacuation organization"
+                    ]
+                },
+                {
+                    "title": "Practice - Exercises",
+                    "items": [
+                        "Manipulation of extinguishers on fire pans",
+                        "Use of Standpipe Systems (RIA)",
+                        "Alert and evacuation simulation"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "First intervention team members",
+                "All personnel needing a refresher"
+            ]
+        },
+        "premiers-secours-recyclage": {
+            "title": "First Aid\n(Recyclage)",
+            "description": "Maintaining and updating the rescuer's skills to intervene effectively.",
+            "duration": "1 day",
+            "level": "Refresher",
+            "objectives": [
+                "Review emergency and survival gestures",
+                "Integrate new first aid recommendations",
+                "Validate the practice of CPR and AED use",
+                "Exchange on feedback and experiences"
+            ],
+            "program": [
+                {
+                    "title": "Gesture Review",
+                    "items": [
+                        "Protection and alert",
+                        "Choking or bleeding victim",
+                        "Unconscious and breathing victim"
+                    ]
+                },
+                {
+                    "title": "Concrete Cases and AED",
+                    "items": [
+                        "Cardiac massage and AED use",
+                        "Workplace accident scenarios",
+                        "Skills assessment"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Designated first aiders",
+                "All personnel wishing to maintain their skills"
+            ]
+        },
+        "securite-milieu-travail": {
+            "title": "Workplace\nSafety",
+            "description": "Awareness and best practices to guarantee a safe working environment daily.",
+            "duration": "1 day",
+            "level": "All levels",
+            "objectives": [
+                "Identify common workplace risks",
+                "Adopt safe behaviors",
+                "Understand safety signs and instructions",
+                "Participate in the company's safety culture"
+            ],
+            "program": [
+                {
+                    "title": "Fundamentals",
+                    "items": [
+                        "Safety rights and duties",
+                        "Hazard identification (falls, handling, noise)",
+                        "Signage and protective equipment"
+                    ]
+                },
+                {
+                    "title": "Daily Prevention",
+                    "items": [
+                        "Order and cleanliness at the workstation",
+                        "Basic gestures and postures",
+                        "What to do in case of anomaly or incident?"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Newcomers",
+                "Office and workshop personnel",
+                "Temporary workers"
+            ]
+        },
+        "permis-travail": {
+            "title": "Work Permit",
+            "description": "Training in the issuance and control of work permits for high-risk operations.",
+            "duration": "1 day",
+            "level": "Operational",
+            "objectives": [
+                "Understand the utility and legal framework of the work permit",
+                "Know how to identify risks before starting work",
+                "Correctly fill out and validate different types of permits",
+                "Monitor compliance with safety measures during the activity"
+            ],
+            "program": [
+                {
+                    "title": "Framework and Typology",
+                    "items": [
+                        "Why a work permit?",
+                        "Different permits (fire, confined space, height, digging)",
+                        "Responsibilities of the issuer and the performer"
+                    ]
+                },
+                {
+                    "title": "Practical Application",
+                    "items": [
+                        "Prior risk analysis",
+                        "On-site safety condition verification",
+                        "Closure and permit return"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Site managers and works supervisors",
+                "HSE supervisors",
+                "Clients and project managers"
+            ]
+        }
+    },
+    "partners": {
+        "title": "Our References"
+    },
+    "nouveautes_section": {
+        "tag": "Innovation & Technology",
+        "title_part1": "Training in",
+        "title_part2": "Virtual Reality",
+        "description": "Immerse your employees in realistic scenarios without any risk. Virtual reality doubles memorization rates and reduces training time by four.",
+        "list_item_1": "Fire simulation and evacuation",
+        "list_item_2": "Working at height and fall prevention",
+        "list_item_3": "Chemical risk awareness",
+        "list_item_4": "Construction sites and industrial environments",
+        "cta": "Explore our VR modules"
+    },
     "common": {
         "coming_soon": "Coming Soon",
-        "learn_more": "Learn more",
-        "details": "Details"
+        "learn_more": "Get a quote",
+        "show_more": "Show more",
+        "show_less": "Show less",
+        "details": "Details",
+        "our_services": "Our Services"
+    },
+    "e_platform": {
+        "title": "E-Platform",
+        "coming_soon": "Page Under Construction",
+        "description": "We are actively working on our new e-learning platform. It will be available soon to offer you the best training experience."
+    },
+    "not_found": {
+        "title": "404",
+        "message": "Oops! Page not found",
+        "back_home": "Return to Home"
+    },
+    "nouveautes_page": {
+        "title": "Virtual Reality Training",
+        "description": "Discover our innovative virtual reality training for an immersive and effective learning experience",
+        "badge": "Virtual Reality",
+        "vr_badge": "VR Training",
+        "cta_title": "Interested in our VR training?",
+        "cta_desc": "Contact us to discover how virtual reality can revolutionize your safety training",
+        "cta_button": "Request a Demo",
+        "vr_formations": {
+            "fire": {
+                "title": "Fire Safety Training",
+                "desc": "Learn essential gestures to prevent and fight fire in immersive virtual reality."
+            },
+            "first_aid": {
+                "title": "First Aid",
+                "desc": "Master first aid techniques in realistic VR scenarios."
+            },
+            "chemical": {
+                "title": "Chemical Product Handling and Storage",
+                "desc": "Comprehensive training on safe chemical product handling in a virtual environment."
+            },
+            "height": {
+                "title": "Working at Height",
+                "desc": "Train for working at height in a safe and realistic VR environment."
+            }
+        }
+    },
+    "hero": {
+        "title": "OZONE",
+        "subtitle": "CONSULTING",
+        "description": "Expertise and innovative solutions for occupational health, safety, and environmental management of your company.",
+        "scroll_indicator": "Explore"
+    },
+    "formations_section": {
+        "tag": "Training & Coaching",
+        "title_part1": "Develop Your",
+        "title_part2": "Health & Safety Skills",
+        "description": "Our training programs are designed to transform your company's safety culture. An interactive and practical pedagogical approach for better assimilation of concepts.",
+        "sst": "First Aid",
+        "sst_desc": "Life-saving techniques and care",
+        "fire": "Fire Safety",
+        "fire_desc": "Extinguisher Handling",
+        "habilitation": "Authorization",
+        "habilitation_desc": "Electrical Safety",
+        "management": "Management",
+        "management_desc": "Safety Culture",
+        "view_catalog": "View Full Catalog"
     },
     "industries": {
         "title": "Sectors and Industries",
@@ -41,8 +1174,37 @@
             "telecom": "Telecommunications"
         }
     },
+    "services_section": {
+        "tag": "Expertise & Consulting",
+        "title_part1": "Our",
+        "title_part2": "HSE Consulting Services",
+        "description": "OZONE Safety Hub supports you in optimizing your health and safety performance. We intervene on all your regulatory and technical issues to guarantee a safe working environment.",
+        "list_item_1": "Occupational risk assessment (DUER)",
+        "list_item_2": "Regulatory compliance audit (ISO 45001, ISO 14001)",
+        "list_item_3": "Development of Internal Operation Plans (POI)",
+        "list_item_4": "Outsourcing of the HSSE Manager function",
+        "cta": "Discover all our services"
+    },
+    "contact_section": {
+        "title": "Contact Us",
+        "intro": "Our team is at your disposal to answer your questions and support you in your projects",
+        "phone": "Phone",
+        "hours_week": "Mon - Fri: 8:30 AM - 6:00 PM",
+        "hours_sat": "Sat: 9:00 AM - 12:00 PM",
+        "call_now": "Call Now",
+        "email": "Email",
+        "response_time": "Response within 24h",
+        "send_email": "Send an email",
+        "our_offices": "Our Offices",
+        "visit_us": "Come meet us",
+        "sfax_hq": "Sfax HQ:",
+        "sousse_office": "Sousse Office:",
+        "get_directions": "Get Directions"
+    },
     "footer": {
         "rights": "All rights reserved.",
-        "links": "Quick Links"
+        "links": "Quick Links",
+        "tagline": "Expert in OHS Consulting and Training",
+        "copyright": "© {{year}} OZONE CONSULTING. All rights reserved."
     }
 }

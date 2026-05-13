@@ -2,12 +2,33 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, GraduationCap, Users, ShieldCheck, Zap } from "lucide-react";
 import formationImage from "@/assets/Photos/Hutchinson.jpg";
+import { motion, useSpring, useTransform, useInView } from "framer-motion";
+
+import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+
+const AnimatedNumber = ({ value }: { value: number }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const spring = useSpring(0, { mass: 0.8, stiffness: 75, damping: 15 });
+  const display = useTransform(spring, (current) => Math.round(current).toLocaleString());
+
+  useEffect(() => {
+    if (isInView) {
+      spring.set(value);
+    }
+  }, [isInView, value, spring]);
+
+  return <motion.span ref={ref}>{display}</motion.span>;
+};
 
 const Formations = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
-    <section id="formations" className="py-24 bg-primary relative overflow-hidden">
+    <section id="formations" className="py-24 bg-[#033853] relative overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl"></div>
 
@@ -22,17 +43,7 @@ const Formations = () => {
                 alt="Nos Formations en Sécurité"
                 className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover object-center transform transition duration-500 hover:scale-[1.02]"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl hidden md:block">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                    <Users className="text-white h-6 w-6" />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-primary">+850</p>
-                    <p className="text-sm text-muted-foreground">Stagiaires formés</p>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
 
@@ -40,25 +51,24 @@ const Formations = () => {
           <div className="w-full lg:w-1/2">
             <div className="space-y-6">
               <div className="inline-block px-4 py-1.5 bg-white/10 border border-white/20 rounded-full">
-                <span className="text-white font-semibold text-sm uppercase tracking-wider">Formation & Coaching</span>
+                <span className="text-white font-semibold text-sm uppercase tracking-wider">{t("formations_section.tag")}</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
-                Développez vos <br />
-                <span className="text-accent">Compétences Santé & Sécurité</span>
+                {t("formations_section.title_part1")} <br />
+                <span className="text-accent">{t("formations_section.title_part2")}</span>
               </h2>
               <div className="w-20 h-1.5 bg-accent rounded-full"></div>
 
               <p className="text-lg text-white/80 leading-relaxed">
-                Nos programmes de formation sont conçus pour transformer la culture sécurité de votre entreprise.
-                Une approche pédagogique interactive et pratique pour une meilleure assimilation des concepts.
+                {t("formations_section.description")}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                 {[
-                  { icon: GraduationCap, title: "SST", desc: "Sauveteur Secouriste du Travail" },
-                  { icon: ShieldCheck, title: "Incendie", desc: "Manipulation des extincteurs" },
-                  { icon: Zap, title: "Habilitation", desc: "Sécurité électrique" },
-                  { icon: Users, title: "Management", desc: "Culture de sécurité" }
+                  { icon: GraduationCap, title: t("formations_section.sst"), desc: t("formations_section.sst_desc") },
+                  { icon: ShieldCheck, title: t("formations_section.fire"), desc: t("formations_section.fire_desc") },
+                  { icon: Zap, title: t("formations_section.habilitation"), desc: t("formations_section.habilitation_desc") },
+                  { icon: Users, title: t("formations_section.management"), desc: t("formations_section.management_desc") }
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-white border border-white/10 hover:border-accent/40 shadow-sm transition-colors">
                     <item.icon className="h-6 w-6 text-accent shrink-0" />
@@ -78,7 +88,7 @@ const Formations = () => {
                     window.scrollTo(0, 0);
                   }}
                 >
-                  Voir le catalogue complet
+                  {t("formations_section.view_catalog")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>

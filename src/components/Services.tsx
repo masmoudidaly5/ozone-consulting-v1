@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import consultingImage from "@/assets/accompagnement et consulting.jpg";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
-    <section id="services" className="py-24 bg-white relative overflow-hidden">
+    <section id="services" className="py-24 bg-background relative overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 left-0 -translate-y-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl"></div>
 
@@ -29,29 +31,28 @@ const Services = () => {
           <div className="w-full lg:w-1/2">
             <div className="space-y-6">
               <div className="inline-block px-4 py-1.5 bg-accent/10 border border-accent/20 rounded-full">
-                <span className="text-accent font-semibold text-sm uppercase tracking-wider">Expertise & Conseil</span>
+                <span className="text-accent font-semibold text-sm uppercase tracking-wider">{t("services_section.tag")}</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-                Nos Services de <br />
-                <span className="text-accent">Consulting HSE</span>
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+                {t("services_section.title_part1")} <br />
+                <span className="text-accent">{t("services_section.title_part2")}</span>
               </h2>
               <div className="w-20 h-1.5 bg-accent rounded-full"></div>
 
-              <p className="text-lg text-slate-600 leading-relaxed">
-                OZONE Safety Hub vous accompagne dans l'optimisation de votre performance en santé-sécurité.
-                Nous intervenons sur l'ensemble de vos problématiques réglementaires et techniques pour garantir un environnement de travail sûr.
+              <p className="text-lg text-white/80 leading-relaxed">
+                {t("services_section.description")}
               </p>
 
               <ul className="space-y-4">
                 {[
-                  "Évaluation des risques professionnels et document unique",
-                  "Audit de conformité réglementaire (ISO 45001, ISO 14001)",
-                  "Élaboration de plans d'opération interne (POI)",
-                  "Externalisation de la fonction responsable HSSE"
+                  t("services_section.list_item_1"),
+                  t("services_section.list_item_2"),
+                  t("services_section.list_item_3"),
+                  t("services_section.list_item_4")
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle2 className="h-6 w-6 text-accent shrink-0" />
-                    <span className="text-slate-700 font-medium">{item}</span>
+                    <span className="text-white/90 font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -64,7 +65,7 @@ const Services = () => {
                     window.scrollTo(0, 0);
                   }}
                 >
-                  Découvrir tous nos services
+                  {t("services_section.cta")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>

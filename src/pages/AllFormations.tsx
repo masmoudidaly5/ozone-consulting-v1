@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft, Download } from "lucide-react";
 import { useEffect } from "react";
 import { useLoader } from "@/hooks/useLoader";
+import { useTranslation } from "react-i18next";
 
 const AllFormations = () => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
     const { triggerLoader } = useLoader();
 
@@ -22,23 +24,23 @@ const AllFormations = () => {
                 <div className="mb-16">
                     {/* Centered Title & Description - Now at the Top */}
                     <div className="text-center max-w-4xl mx-auto mb-12">
-                        <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-primary leading-tight">
-                            Catalogue Complet des Formations
+                        <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white leading-tight">
+                            {t("formations_page.title")}
                         </h1>
-                        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                            Découvrez l'ensemble de nos programmes de formation conçus pour renforcer la sécurité et les compétences de vos équipes.
+                        <p className="text-lg md:text-xl text-white/70 leading-relaxed">
+                            {t("formations_page.description")}
                         </p>
                     </div>
 
                     {/* Navigation Buttons Row - Pushed to extremities */}
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-border/50 pb-8">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-white/20 pb-8">
                         <Button
                             variant="ghost"
                             onClick={() => navigate("/")}
                             className="hover:bg-secondary/50 group flex items-center gap-3 px-4 py-6"
                         >
-                            <ArrowLeft className="h-5 w-5 text-primary transition-transform group-hover:-translate-x-1" />
-                            <span className="text-lg font-medium text-primary">Retour à l'accueil</span>
+                            <ArrowLeft className="h-5 w-5 text-white transition-transform group-hover:-translate-x-1" />
+                            <span className="text-lg font-medium text-white">{t("about_page.back_home")}</span>
                         </Button>
 
                         <Button
@@ -50,7 +52,7 @@ const AllFormations = () => {
                                 }, 1000);
                             }}
                         >
-                            <span className="text-base">Télécharger le catalogue PDF</span>
+                            <span className="text-base">{t("formations_page.download_pdf")}</span>
                             <Download className="ml-3 h-5 w-5" />
                         </Button>
                     </div>
@@ -80,14 +82,14 @@ const AllFormations = () => {
                                                 Réf: {formation.reference}
                                             </Badge>
                                             <Badge variant="outline" className="bg-background border-primary/10 text-primary px-1.5 py-0">
-                                                {formation.duration}
+                                                {t(`formations.${formation.id}.duration`, { defaultValue: formation.duration })}
                                             </Badge>
                                         </div>
 
                                         {/* Title - Centered and fully visible */}
-                                        <div className="mb-4 flex-1 flex flex-col justify-center py-2">
-                                            <h3 className="text-sm md:text-base font-display font-bold text-foreground group-hover:text-primary transition-colors leading-tight text-center whitespace-pre-line">
-                                                {formation.title}
+                                        <div className="mb-4 flex-1 flex flex-col justify-center py-4 min-h-[80px]">
+                                            <h3 className="text-lg md:text-xl font-display font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug text-center whitespace-pre-line">
+                                                {t(`formations.${formation.id}.title`, { defaultValue: formation.title })}
                                             </h3>
                                         </div>
 
@@ -100,7 +102,7 @@ const AllFormations = () => {
                                                 window.scrollTo({ top: 0, behavior: 'smooth' });
                                             }}
                                         >
-                                            <span className="text-xs">Détails</span>
+                                            <span className="text-xs">{t("formations_page.details")}</span>
                                             <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
                                         </Button>
                                     </CardContent>
@@ -113,13 +115,11 @@ const AllFormations = () => {
                 {/* Sur Mesure Section */}
                 <div className="text-center">
                     <div className="bg-accent/10 rounded-2xl p-8 max-w-3xl mx-auto border border-accent/20">
-                        <h3 className="text-2xl font-display font-bold mb-4 text-primary">
-                            Formations Sur Mesure
+                        <h3 className="text-2xl font-display font-bold mb-4 text-white">
+                            {t("formations_page.custom_title")}
                         </h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                            Toutes nos formations peuvent être adaptées aux besoins spécifiques de votre entreprise.
-                            Nous proposons également des programmes sur mesure en fonction de vos contraintes opérationnelles
-                            et de votre secteur d'activité.
+                        <p className="text-white/70 leading-relaxed">
+                            {t("formations_page.custom_desc")}
                         </p>
                         <div className="mt-6">
                             <Button
@@ -136,7 +136,7 @@ const AllFormations = () => {
                                     }, 100);
                                 }}
                             >
-                                Personnaliser votre pack de formation
+                                {t("formations_page.custom_cta")}
                             </Button>
                         </div>
                     </div>

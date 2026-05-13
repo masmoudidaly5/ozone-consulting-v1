@@ -21,7 +21,7 @@ const ImageCarousel = () => {
     const activeRating = hoveredIndex !== null ? ratings.find(r => r.id === hoveredIndex) : null;
 
     return (
-        <section id="temoignages" className="py-16 pb-8 bg-primary relative overflow-hidden">
+        <section id="temoignages" className="py-16 pb-8 bg-[#033853] relative overflow-hidden">
             {/* Decorative background element */}
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl"></div>
 

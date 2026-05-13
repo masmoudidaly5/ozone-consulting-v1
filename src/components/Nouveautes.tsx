@@ -2,12 +2,14 @@ import { Eye, ArrowRight, CheckCircle2 } from "lucide-react";
 import vrIntro from "@/assets/VR intro.png";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Nouveautes = () => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     return (
-        <section id="nouveautes" className="py-24 bg-primary relative overflow-hidden">
+        <section id="nouveautes" className="py-24 bg-[#033853] relative overflow-hidden">
             {/* Decorative background element */}
             <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl"></div>
 
@@ -31,26 +33,25 @@ const Nouveautes = () => {
                             <div className="inline-block px-4 py-1.5 bg-white/10 border border-white/20 rounded-full">
                                 <div className="flex items-center gap-2">
                                     <Eye className="w-4 h-4 text-accent" />
-                                    <span className="text-white font-semibold text-sm uppercase tracking-wider">Innovation & Technologie</span>
+                                    <span className="text-white font-semibold text-sm uppercase tracking-wider">{t("nouveautes_section.tag")}</span>
                                 </div>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
-                                Formation en <br />
-                                <span className="text-accent">Réalité Virtuelle</span>
+                                {t("nouveautes_section.title_part1")} <br />
+                                <span className="text-accent">{t("nouveautes_section.title_part2")}</span>
                             </h2>
                             <div className="w-20 h-1.5 bg-accent rounded-full"></div>
 
                             <p className="text-lg text-white/80 leading-relaxed">
-                                Plongez vos collaborateurs dans des scénarios réalistes sans aucun risque.
-                                La réalité virtuelle double le taux de mémorisation et réduit le temps de formation par quatre.
+                                {t("nouveautes_section.description")}
                             </p>
 
                             <ul className="space-y-4">
                                 {[
-                                    "Simulation d'incendie et évacuation",
-                                    "Travaux en hauteur et prévention des chutes",
-                                    "Sensibilisation au risque chimique",
-                                    "Chantiers et environnement industriels"
+                                    t("nouveautes_section.list_item_1"),
+                                    t("nouveautes_section.list_item_2"),
+                                    t("nouveautes_section.list_item_3"),
+                                    t("nouveautes_section.list_item_4")
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3">
                                         <CheckCircle2 className="h-6 w-6 text-accent shrink-0" />
@@ -67,7 +68,7 @@ const Nouveautes = () => {
                                         window.scrollTo(0, 0);
                                     }}
                                 >
-                                    Explorer nos modules VR
+                                    {t("nouveautes_section.cta")}
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Button>
                             </div>

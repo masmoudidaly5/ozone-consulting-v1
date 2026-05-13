@@ -1,6 +1,9 @@
-import { Shield, FileText, Users, CheckCircle, BarChart, Activity, ClipboardList } from "lucide-react";
+import { Shield, FileText, Users, CheckCircle, BarChart, Activity, ClipboardList, ChevronDown, ChevronUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import isoImage from "@/assets/iso-45001.jpg";
+import iso9001Image from "@/assets/ISO9001 2.jpg";
+import iso14001Image from "@/assets/ISO 14001.jpg";
+import iso22000Image from "@/assets/ISO 22000.jpg";
 import consultingImage from "@/assets/consulting.jpg";
 import ergoImage from "@/assets/ergo.jpg";
 import eddImage from "@/assets/EDD2.jpg";
@@ -10,86 +13,133 @@ import accConsultingImage from "@/assets/accompagnement et consulting.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const AllServices = () => {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
+    const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
+
+    const toggleExpand = (index: number) => {
+        setExpandedIndices(prev =>
+            prev.includes(index)
+                ? prev.filter(i => i !== index)
+                : [...prev, index]
+        );
+    };
+
     const services = [
         {
             icon: BarChart,
-            title: "Études de dangers",
-            description: "Identification et évaluation complète des risques pour prévenir les accidents et améliorer la sécurité de vos installations.",
+            title: t("all_services.services_list.hazards.title"),
+            description: t("all_services.services_list.hazards.desc"),
             image: eddImage,
             features: [
-                "Identification des risques majeurs",
-                "Analyse de scénarios d'accidents",
-                "Mesures de prévention",
-                "Amélioration de la sécurité",
+                t("all_services.services_list.hazards.feat1"),
+                t("all_services.services_list.hazards.feat2"),
+                t("all_services.services_list.hazards.feat3"),
+                t("all_services.services_list.hazards.feat4"),
             ],
         },
         {
             icon: FileText,
-            title: "Dossier de classement",
-            description: "Accompagnement complet pour le classement de vos établissements (ICPE) et la conformité réglementaire.",
+            title: t("all_services.services_list.classification.title"),
+            description: t("all_services.services_list.classification.desc"),
             image: poiImage,
             features: [
-                "Analyse de conformité",
-                "Constitution du dossier",
-                "Relations avec l'administration",
-                "Suivi des procédures",
+                t("all_services.services_list.classification.feat1"),
+                t("all_services.services_list.classification.feat2"),
+                t("all_services.services_list.classification.feat3"),
+                t("all_services.services_list.classification.feat4"),
             ],
         },
         {
             icon: Users,
-            title: "Étude ergonomique",
-            description: "Analyse approfondie des postes de travail pour prévenir les TMS et optimiser le confort et la productivité.",
+            title: t("all_services.services_list.ergo.title"),
+            description: t("all_services.services_list.ergo.desc"),
             image: ergoImage,
             features: [
-                "Analyse de l'activité",
-                "Aménagement de postes",
-                "Prévention des TMS",
-                "Bien-être au travail",
+                t("all_services.services_list.ergo.feat1"),
+                t("all_services.services_list.ergo.feat2"),
+                t("all_services.services_list.ergo.feat3"),
+                t("all_services.services_list.ergo.feat4"),
             ],
         },
         {
             icon: Shield,
-            title: "Système ISO 45001",
-            description: "Mise en place et certification du système de management de la santé sécurité au travail selon la norme ISO 45001.",
+            title: t("all_services.services_list.iso.title"),
+            description: t("all_services.services_list.iso.desc"),
             image: isoImage,
             features: [
-                "Diagnostic initial",
-                "Mise en place ISO 45001",
-                "Audit interne",
-                "Accompagnement certification",
+                t("all_services.services_list.iso.feat1"),
+                t("all_services.services_list.iso.feat2"),
+                t("all_services.services_list.iso.feat3"),
+                t("all_services.services_list.iso.feat4"),
+            ],
+        },
+        {
+            icon: Shield,
+            title: t("all_services.services_list.iso9001.title"),
+            description: t("all_services.services_list.iso9001.desc"),
+            image: iso9001Image,
+            features: [
+                t("all_services.services_list.iso9001.feat1"),
+                t("all_services.services_list.iso9001.feat2"),
+                t("all_services.services_list.iso9001.feat3"),
+                t("all_services.services_list.iso9001.feat4"),
+            ],
+        },
+        {
+            icon: Shield,
+            title: t("all_services.services_list.iso14001.title"),
+            description: t("all_services.services_list.iso14001.desc"),
+            image: iso14001Image,
+            features: [
+                t("all_services.services_list.iso14001.feat1"),
+                t("all_services.services_list.iso14001.feat2"),
+                t("all_services.services_list.iso14001.feat3"),
+                t("all_services.services_list.iso14001.feat4"),
+            ],
+        },
+        {
+            icon: Shield,
+            title: t("all_services.services_list.iso22000.title"),
+            description: t("all_services.services_list.iso22000.desc"),
+            image: iso22000Image,
+            features: [
+                t("all_services.services_list.iso22000.feat1"),
+                t("all_services.services_list.iso22000.feat2"),
+                t("all_services.services_list.iso22000.feat3"),
+                t("all_services.services_list.iso22000.feat4"),
             ],
         },
         {
             icon: ClipboardList,
-            title: "Évaluation des risques",
-            description: "Identification et évaluation méthodique des risques professionnels pour l'élaboration de votre Document Unique.",
+            title: t("all_services.services_list.risk.title"),
+            description: t("all_services.services_list.risk.desc"),
             image: evalRisquesImage,
             features: [
-                "Inventaire des risques",
-                "Cotation et hiérarchisation",
-                "Plan d'action de prévention",
-                "Mise à jour du DUER",
+                t("all_services.services_list.risk.feat1"),
+                t("all_services.services_list.risk.feat2"),
+                t("all_services.services_list.risk.feat3"),
             ],
         },
         {
             icon: Activity,
-            title: "Consulting stratégique",
-            description: "Accompagnement personnalisé pour optimiser vos processus et améliorer votre performance en matière de sécurité.",
+            title: t("all_services.services_list.strategy.title"),
+            description: t("all_services.services_list.strategy.desc"),
             image: accConsultingImage,
             features: [
-                "Optimisation des processus",
-                "Performance sécurité",
-                "Conseil sur mesure",
-                "Suivi et évaluation",
+                t("all_services.services_list.strategy.feat1"),
+                t("all_services.services_list.strategy.feat2"),
+                t("all_services.services_list.strategy.feat3"),
+                t("all_services.services_list.strategy.feat4"),
             ],
         },
     ];
@@ -105,15 +155,15 @@ const AllServices = () => {
                         className="mb-6 hover:bg-secondary/50"
                     >
                         <ArrowLeft className="mr-2 h-4 w-4" />
-                        Retour à l'accueil
+                        {t("about_page.back_home")}
                     </Button>
 
                     <div className="text-center max-w-3xl mx-auto">
-                        <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-primary">
-                            Nos Services
+                        <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-white">
+                            {t("all_services.title")}
                         </h1>
-                        <p className="text-lg text-muted-foreground">
-                            Des solutions complètes pour accompagner vos projets en santé-sécurité au travail.
+                        <p className="text-lg text-white/70">
+                            {t("all_services.description")}
                         </p>
                     </div>
                 </div>
@@ -130,26 +180,43 @@ const AllServices = () => {
                                     alt={service.title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-primary shadow-sm">
-                                    <service.icon className="h-6 w-6" />
-                                </div>
+
                             </div>
                             <CardHeader className="pt-6 pb-4">
-                                <CardTitle className="text-2xl font-display mb-2">{service.title}</CardTitle>
+                                <CardTitle
+                                    className="text-2xl font-display mb-2 text-center"
+                                    dangerouslySetInnerHTML={{ __html: service.title }}
+                                />
                             </CardHeader>
                             <CardContent className="flex-1 flex flex-col">
                                 <p className="text-muted-foreground mb-8 leading-relaxed">
                                     {service.description}
                                 </p>
-                                <div className="mt-auto bg-secondary/20 rounded-xl p-6 mb-6">
-                                    <ul className="space-y-3">
-                                        {service.features.map((feature, idx) => (
-                                            <li key={idx} className="flex items-start">
-                                                <CheckCircle className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                                                <span className="text-sm font-medium text-foreground/80">{feature}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                <div className="mt-auto">
+                                    <button
+                                        onClick={() => toggleExpand(index)}
+                                        className="flex items-center justify-center w-full mb-4 text-primary font-semibold hover:text-primary/80 transition-colors"
+                                    >
+                                        {expandedIndices.includes(index) ? t("common.show_less") || "Voir moins" : t("common.show_more") || "Voir plus"}
+                                        {expandedIndices.includes(index) ? (
+                                            <ChevronUp className="ml-1 h-4 w-4" />
+                                        ) : (
+                                            <ChevronDown className="ml-1 h-4 w-4" />
+                                        )}
+                                    </button>
+
+                                    {expandedIndices.includes(index) && (
+                                        <div className="bg-secondary/20 rounded-xl p-6 mb-6 animate-in fade-in slide-in-from-top-2 duration-300">
+                                            <ul className="space-y-3">
+                                                {service.features.map((feature, idx) => (
+                                                    <li key={idx} className="flex items-start">
+                                                        <CheckCircle className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                                                        <span className="text-sm font-medium text-foreground/80">{feature}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
                                 </div>
                                 <Button
                                     className="w-full bg-primary hover:bg-primary/90 text-white group-hover:translate-x-1 transition-all"
@@ -163,7 +230,7 @@ const AllServices = () => {
                                         }, 100);
                                     }}
                                 >
-                                    En savoir plus
+                                    {t("common.learn_more")}
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                 </Button>
                             </CardContent>

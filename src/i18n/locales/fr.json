@@ -11,10 +11,1143 @@
         "contact": "Contact",
         "client_space": "Espace Client"
     },
+    "about": {
+        "title": "L'Excellence au Service de la Sécurité",
+        "approach_title": "Notre Approche",
+        "approach_p1": "OZONE CONSULTING s'est imposé comme un acteur majeur dans le domaine du consulting et de la formation en santé-sécurité au travail.",
+        "approach_p2": "Fort d'une expérience significative auprès d'entreprises industrielles, notre cabinet combine expertise technique et approche pédagogique.",
+        "engagement_title": "Notre Engagement",
+        "engagement_p1": "Notre équipe de consultants et formateurs qualifiés accompagne les organisations dans leur démarche d'amélioration continue.",
+        "engagement_p2": "De la conception d'études de dangers à la mise en place de systèmes de management conformes aux normes internationales, nous vous guidons à chaque étape."
+    },
+    "about_brief": {
+        "welcome": "Welcome to Ozone,",
+        "description": "Bienvenue chez Ozone. Nous sommes un cabinet de conseil et de formation tunisien fondé en 2020. Nous proposons des solutions innovantes et personnalisées, adaptées aux besoins de nos clients. Notre expertise couvre un large éventail de services, de la formation professionnelle au conseil stratégique en passant par le Management HSE. Nos experts accompagnent les entreprises vers une croissance durable et l'excellence opérationnelle.",
+        "compliance_title": "Conformité",
+        "compliance_desc": "Respect strict des normes ISO et réglementations locales.",
+        "innovation_title": "Innovation",
+        "innovation_desc": "Utilisation de la VR pour des formations immersives.",
+        "coaching_title": "Coaching",
+        "coaching_desc": "Accompagnement terrain personnalisé pour vos équipes.",
+        "results_title": "Résultats",
+        "results_desc": "Réduction drastique des incidents et optimisation QHSE.",
+        "cta": "Découvrir notre ADN"
+    },
+    "about_page": {
+        "back_home": "Retour à l'accueil",
+        "title_part1": "OZONE Consulting :",
+        "title_part2": "Votre Partenaire de Confiance",
+        "accreditation_title": "Agréé par l'État",
+        "accreditation_desc": "Cabinet de formation agréé par le Centre National de Formation Continue et de Promotion Professionnelle sous le Numéro d'enregistrement: 61-455-24."
+    },
+    "all_services": {
+        "title": "Nos Services",
+        "description": "Des solutions complètes pour accompagner vos projets en santé-sécurité au travail.",
+        "services_list": {
+            "hazards": {
+                "title": "Études de dangers",
+                "desc": "Identification et évaluation complète des risques pour prévenir les accidents et améliorer la sécurité de vos installations.",
+                "feat1": "Identification des risques majeurs",
+                "feat2": "Analyse de scénarios d'accidents",
+                "feat3": "Mesures de prévention",
+                "feat4": "Amélioration de la sécurité"
+            },
+            "classification": {
+                "title": "Dossier de classement",
+                "desc": "Accompagnement complet pour le classement de vos établissements et la conformité réglementaire.",
+                "feat1": "Analyse de conformité",
+                "feat2": "Constitution du dossier",
+                "feat3": "Relations avec l'administration",
+                "feat4": "Suivi des procédures"
+            },
+            "ergo": {
+                "title": "Étude ergonomique",
+                "desc": "Analyse approfondie des postes de travail pour prévenir les TMS et optimiser le confort et la productivité.",
+                "feat1": "Analyse de l'activité",
+                "feat2": "Aménagement de postes",
+                "feat3": "Prévention des TMS",
+                "feat4": "Bien-être au travail"
+            },
+            "iso": {
+                "title": "Mise en place Système <br/> ISO 45001",
+                "desc": "Mise en place et certification du système de management de la santé sécurité au travail selon la norme ISO 45001.",
+                "feat1": "Diagnostic initial",
+                "feat2": "Mise en place ISO 45001",
+                "feat3": "Audit interne",
+                "feat4": "Accompagnement certification"
+            },
+            "iso9001": {
+                "title": "Mise en place Système <br/> ISO 9001",
+                "desc": "Mise en place et certification du système de management de la qualité selon la norme ISO 9001.",
+                "feat1": "Diagnostic initial",
+                "feat2": "Mise en place ISO 9001",
+                "feat3": "Audit interne",
+                "feat4": "Accompagnement certification"
+            },
+            "iso14001": {
+                "title": "Mise en place Système <br/> ISO 14001",
+                "desc": "Mise en place et certification du système de management environnemental selon la norme ISO 14001.",
+                "feat1": "Diagnostic initial",
+                "feat2": "Mise en place ISO 14001",
+                "feat3": "Audit interne",
+                "feat4": "Accompagnement certification"
+            },
+            "iso22000": {
+                "title": "Mise en place Système <br/> ISO 22000",
+                "desc": "Mise en place et certification du système de management de la sécurité des denrées alimentaires selon la norme ISO 22000.",
+                "feat1": "Diagnostic initial",
+                "feat2": "Mise en place ISO 22000",
+                "feat3": "Audit interne",
+                "feat4": "Accompagnement certification"
+            },
+            "risk": {
+                "title": "Évaluation des risques",
+                "desc": "Identification et évaluation méthodique des risques professionnels pour l'élaboration de votre Document Unique.",
+                "feat1": "Inventaire des risques",
+                "feat2": "Cotation et hiérarchisation",
+                "feat3": "Plan d'action de prévention"
+            },
+            "strategy": {
+                "title": "Consulting stratégique",
+                "desc": "Accompagnement personnalisé pour optimiser vos processus et améliorer votre performance en matière de sécurité.",
+                "feat1": "Optimisation des processus",
+                "feat2": "Performance sécurité",
+                "feat3": "Conseil sur mesure",
+                "feat4": "Suivi et évaluation"
+            }
+        }
+    },
+    "formations_page": {
+        "title": "Catalogue Complet des Formations",
+        "description": "Découvrez l'ensemble de nos programmes de formation conçus pour renforcer la sécurité et les compétences de vos équipes.",
+        "download_pdf": "Télécharger le catalogue PDF",
+        "details": "Détails",
+        "custom_title": "Formations Sur Mesure",
+        "custom_desc": "Toutes nos formations peuvent être adaptées aux besoins spécifiques de votre entreprise. Nous proposons également des programmes sur mesure en fonction de vos contraintes opérationnelles et de votre secteur d'activité.",
+        "custom_cta": "Personnaliser votre pack de formation"
+    },
+    "formation_detail": {
+        "not_found": "Formation non trouvée",
+        "back_to_formations": "Retour aux formations",
+        "objectives": "Objectifs de la formation",
+        "program": "Programme détaillé",
+        "practical_info": "Informations pratiques",
+        "reference": "Référence",
+        "duration": "Durée",
+        "target_audience": "Public cible",
+        "prerequisites": "Prérequis",
+        "certification": "Certification",
+        "get_quote": "Demander un devis"
+    },
+    "formations": {
+        "premiers-secours": {
+            "title": "Les Premiers secours Niveau 1",
+            "description": "Formation aux gestes qui sauvent pour intervenir efficacement en cas d'accident.",
+            "duration": "2 jours",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Maîtriser les gestes de premiers secours",
+                "Savoir alerter les secours de manière efficace",
+                "Gérer une situation d'urgence en attendant les secours",
+                "Prévenir les risques d'aggravation"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Les bases du secourisme",
+                    "items": [
+                        "Protection, prévention et alerte",
+                        "La victime s'étouffe",
+                        "La victime saigne abondamment",
+                        "La victime est inconsciente"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Situations d'urgence",
+                    "items": [
+                        "La victime ne respire pas",
+                        "La victime se plaint d'un malaise",
+                        "La victime se plaint de brûlures",
+                        "La victime se plaint d'une plaie",
+                        "Mise en situation pratique"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Tout personnel d'entreprise",
+                "Membres du CHSCT",
+                "Équipes de sécurité"
+            ]
+        },
+        "premiers-secours-niveau-2": {
+            "title": "Les Premiers secours Niveau 2 (avancé)",
+            "description": "Formation avancée aux premiers secours en équipe, incluant le relevage, la fixation et le brancardage.",
+            "duration": "4 jours",
+            "level": "Avancé",
+            "objectives": [
+                "Maîtriser les techniques avancées de premiers secours en équipe",
+                "Assurer le relevage et la fixation d'une victime",
+                "Réaliser un brancardage en toute sécurité",
+                "Coordonner les interventions d'équipe"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Rappels et techniques avancées",
+                    "items": [
+                        "Révision des gestes de base",
+                        "Évaluation primaire et secondaire approfondie",
+                        "Gestion des détresses vitales",
+                        "Communication en équipe d'intervention"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Premiers secours avancés en équipe",
+                    "items": [
+                        "Techniques de réanimation en équipe",
+                        "Gestion des hémorragies graves",
+                        "Immobilisation des fractures complexes",
+                        "Prise en charge des traumatismes multiples"
+                    ]
+                },
+                {
+                    "title": "Jour 3 - Relevage et fixation",
+                    "items": [
+                        "Techniques de relevage sécurisé",
+                        "Fixation sur plan dur",
+                        "Utilisation du matelas coquille",
+                        "Immobilisation rachidienne"
+                    ]
+                },
+                {
+                    "title": "Jour 4 - Brancardage et mise en situation",
+                    "items": [
+                        "Techniques de brancardage en terrain difficile",
+                        "Coordination d'équipe lors du transport",
+                        "Passages d'obstacles",
+                        "Mises en situation complexes"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Secouristes confirmés",
+                "Équipes de secours d'entreprise",
+                "Personnel médical et paramédical",
+                "Sapeurs-pompiers volontaires"
+            ]
+        },
+        "utilisation-dae": {
+            "title": "Utilisation d'un Défibrillateur Automatisé Externe (DAE)",
+            "description": "Formation à l'utilisation du défibrillateur cardiaque automatisé externe pour intervenir en cas d'arrêt cardiaque.",
+            "duration": "2 jours",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Reconnaître un arrêt cardiaque",
+                "Utiliser un défibrillateur automatisé externe (DAE)",
+                "Pratiquer la réanimation cardio-pulmonaire (RCP)",
+                "Coordonner l'intervention avec les secours"
+            ],
+            "program": [
+                {
+                    "title": "Matin - Théorie et reconnaissance",
+                    "items": [
+                        "Anatomie et physiologie du cœur",
+                        "Reconnaissance de l'arrêt cardiaque",
+                        "La chaîne de survie",
+                        "Fonctionnement du DAE",
+                        "Réglementation et responsabilités"
+                    ]
+                },
+                {
+                    "title": "Après-midi - Pratique",
+                    "items": [
+                        "Mise en œuvre du DAE",
+                        "Réanimation cardio-pulmonaire (RCP)",
+                        "Coordination RCP et DAE",
+                        "Mises en situation pratiques",
+                        "Cas particuliers et précautions"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Tout personnel d'entreprise",
+                "Secouristes",
+                "Personnel d'accueil",
+                "Responsables de sites"
+            ]
+        },
+        "lutte-incendies": {
+            "title": "Lutte contre les incendies Niveau 1",
+            "description": "Apprentissage des techniques de prévention et d'extinction des feux.",
+            "duration": "2 jours",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Comprendre le phénomène de combustion",
+                "Identifier les différents types de feux",
+                "Utiliser les extincteurs appropriés",
+                "Évacuer en toute sécurité"
+            ],
+            "program": [
+                {
+                    "title": "Partie théorique",
+                    "items": [
+                        "Le triangle du feu et les classes de feux",
+                        "Les agents extincteurs et leur utilisation",
+                        "Les équipements de protection incendie",
+                        "Les consignes d'évacuation"
+                    ]
+                },
+                {
+                    "title": "Partie pratique",
+                    "items": [
+                        "Manipulation des extincteurs",
+                        "Exercices sur feux réels",
+                        "Simulation d'évacuation",
+                        "Utilisation des RIA"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Équipiers de première intervention",
+                "Personnel d'entreprise",
+                "Responsables sécurité"
+            ]
+        },
+        "lutte-incendies-niveau-2": {
+            "title": "Lutte contre les incendies Niveau 2",
+            "description": "Formation avancée à la lutte contre les incendies : établissement des tuyaux, émulseurs et mousses, feux d'hydrocarbures, fuites de gaz et ARI.",
+            "duration": "3 jours",
+            "level": "Avancé",
+            "objectives": [
+                "Maîtriser l'établissement des tuyaux souples",
+                "Utiliser les émulseurs et mousses extincteurs",
+                "Intervenir sur feux d'hydrocarbures et fuites de gaz",
+                "Utiliser l'appareil respiratoire isolant (ARI)"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Techniques avancées et établissement",
+                    "items": [
+                        "Rappels des fondamentaux de la lutte incendie",
+                        "Établissement des tuyaux souples",
+                        "Techniques de déploiement rapide",
+                        "Manœuvres de lances à incendie"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Feux spéciaux et émulseurs",
+                    "items": [
+                        "Feux d'hydrocarbures : spécificités et dangers",
+                        "Émulseurs et mousses extincteurs",
+                        "Techniques d'extinction par mousse",
+                        "Gestion des fuites de gaz",
+                        "Procédures d'intervention sur fuite de gaz"
+                    ]
+                },
+                {
+                    "title": "Jour 3 - Appareil respiratoire isolant (ARI)",
+                    "items": [
+                        "Fonctionnement et vérification de l'ARI",
+                        "Équipement et mise en œuvre",
+                        "Intervention en atmosphère enfumée",
+                        "Gestion de l'autonomie et procédures de secours",
+                        "Exercices pratiques en conditions réelles"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Équipiers de seconde intervention",
+                "Sapeurs-pompiers d'entreprise",
+                "Responsables sécurité incendie",
+                "Personnel des sites SEVESO"
+            ]
+        },
+        "charges-evacuation": {
+            "title": "Chargés d'Évacuation",
+            "description": "Formation pour les responsables de l'évacuation en cas d'urgence, incluant la gestion des personnes et les procédures d'évacuation.",
+            "duration": "1 jour",
+            "level": "Encadrement",
+            "objectives": [
+                "Connaître le rôle et les missions du chargé d'évacuation",
+                "Maîtriser les procédures d'évacuation",
+                "Gérer le stress et la communication en situation d'urgence",
+                "Effectuer le comptage et l'accompagnement des personnes"
+            ],
+            "program": [
+                {
+                    "title": "Matin - Cadre réglementaire et rôle",
+                    "items": [
+                        "Réglementation relative à l'évacuation",
+                        "Rôle et responsabilités du chargé d'évacuation",
+                        "Organisation de l'évacuation dans l'entreprise",
+                        "Les consignes de sécurité incendie"
+                    ]
+                },
+                {
+                    "title": "Après-midi - Procédures et mise en pratique",
+                    "items": [
+                        "Procédures d'évacuation et points de rassemblement",
+                        "Techniques de communication en situation d'urgence",
+                        "Gestion des personnes à mobilité réduite",
+                        "Exercice pratique d'évacuation"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Chargés d'évacuation désignés",
+                "Membres du CSE",
+                "Responsables d'équipe",
+                "Personnel d'encadrement"
+            ]
+        },
+        "equipe-premiere-intervention": {
+            "title": "Équipe de Première Intervention (EPI)",
+            "description": "Formation complète pour les équipiers de première intervention face aux débuts d'incendie.",
+            "duration": "3 jours",
+            "level": "Opérateurs",
+            "objectives": [
+                "Intervenir rapidement sur un début d'incendie",
+                "Maîtriser l'ensemble des moyens de première intervention",
+                "Coordonner les actions avec l'équipe",
+                "Assurer la sécurité des personnes"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Fondamentaux et théorie",
+                    "items": [
+                        "Réglementation et rôle de l'EPI",
+                        "Théorie du feu et classes de feux",
+                        "Moyens d'extinction et agents extincteurs",
+                        "Équipements de protection incendie",
+                        "Organisation de l'intervention"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Pratique des moyens d'extinction",
+                    "items": [
+                        "Manipulation des extincteurs portatifs",
+                        "Utilisation des RIA",
+                        "Techniques d'extinction sur feux réels",
+                        "Progression en binôme",
+                        "Communication et coordination"
+                    ]
+                },
+                {
+                    "title": "Jour 3 - Mises en situation",
+                    "items": [
+                        "Reconnaissance et évaluation d'un sinistre",
+                        "Intervention coordonnée en équipe",
+                        "Gestion de situations complexes",
+                        "Évacuation et mise en sécurité",
+                        "Évaluation pratique"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Équipiers de première intervention",
+                "Personnel de sécurité",
+                "Agents de maintenance",
+                "Responsables de site"
+            ]
+        },
+        "equipe-seconde-intervention": {
+            "title": "Équipe de Seconde Intervention (ESI)",
+            "description": "Formation avancée pour les équipiers de seconde intervention capables de gérer des incendies importants.",
+            "duration": "3 jours",
+            "level": "Avancé",
+            "objectives": [
+                "Intervenir sur des incendies développés",
+                "Utiliser l'appareil respiratoire isolant (ARI)",
+                "Maîtriser les techniques avancées d'extinction",
+                "Coordonner avec les secours externes"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Techniques avancées",
+                    "items": [
+                        "Rôle et missions de l'ESI",
+                        "Phénomènes thermiques dangereux",
+                        "Établissement de lances et tuyaux",
+                        "Techniques de ventilation",
+                        "Reconnaissance sous ARI"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - ARI et intervention",
+                    "items": [
+                        "Appareil respiratoire isolant : utilisation",
+                        "Progression en atmosphère enfumée",
+                        "Sauvetage et évacuation",
+                        "Gestion de l'autonomie en air",
+                        "Procédures de secours ARI"
+                    ]
+                },
+                {
+                    "title": "Jour 3 - Coordination et exercices",
+                    "items": [
+                        "Commandement et coordination d'équipe",
+                        "Interface avec les sapeurs-pompiers",
+                        "Exercices pratiques en conditions réelles",
+                        "Gestion de sinistres complexes",
+                        "Évaluation finale"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Équipiers de seconde intervention",
+                "Sapeurs-pompiers d'entreprise",
+                "Responsables sécurité incendie",
+                "Personnel des sites à risques"
+            ]
+        },
+        "plan-operations-interne": {
+            "title": "Plan d'Opérations Interne (POI)",
+            "description": "Formation à l'élaboration et à la mise en œuvre du Plan d'Opérations Interne pour les établissements à risques.",
+            "duration": "2 jours",
+            "level": "Encadrement",
+            "objectives": [
+                "Comprendre les obligations réglementaires du POI",
+                "Élaborer un Plan d'Opérations Interne adapté",
+                "Organiser la gestion de crise",
+                "Tester et améliorer le POI"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Cadre réglementaire et élaboration",
+                    "items": [
+                        "Réglementation des installations classées (ICPE)",
+                        "Obligations légales du POI",
+                        "Analyse des risques et scénarios d'accidents",
+                        "Structure et contenu du POI",
+                        "Organisation de la cellule de crise"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Mise en œuvre et exercices",
+                    "items": [
+                        "Procédures d'alerte et de mobilisation",
+                        "Coordination avec les secours externes",
+                        "Gestion de la communication de crise",
+                        "Exercices de simulation POI",
+                        "Retour d'expérience et amélioration continue"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Directeurs d'établissement",
+                "Responsables HSE",
+                "Responsables de sites SEVESO",
+                "Membres de la cellule de crise"
+            ]
+        },
+        "prevention-levage-manutention": {
+            "title": "Prévention des risques liés aux activités physiques (levage et manutention)",
+            "description": "Formation sur les bonnes pratiques de levage, manutention et prévention des troubles musculosquelettiques.",
+            "duration": "1 jour",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Identifier les risques liés aux gestes de levage",
+                "Appliquer les techniques de manutention sécurisée",
+                "Utiliser les équipements d'aide au levage",
+                "Prévenir les TMS et les accidents"
+            ],
+            "program": [
+                {
+                    "title": "Théorie et réglementation",
+                    "items": [
+                        "Risques biomécaniques du levage",
+                        "Normes et obligations légales",
+                        "Évaluation des postes de travail"
+                    ]
+                },
+                {
+                    "title": "Atelier pratique",
+                    "items": [
+                        "Démonstration d'équipements de levage",
+                        "Mise en situation de manutention",
+                        "Analyse des gestes et corrections"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Opérateurs de production",
+                "Techniciens de maintenance",
+                "Personnel de logistique"
+            ]
+        },
+        "ergonomie-ecran": {
+            "title": "Ergonomie et travail sur écran",
+            "description": "Optimisation du poste de travail informatique pour prévenir les troubles musculosquelettiques liés aux écrans.",
+            "duration": "1 jour",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Comprendre les risques liés au travail sur écran",
+                "Adopter les bonnes postures devant l'ordinateur",
+                "Aménager le poste de travail ergonomiquement",
+                "Intégrer des pauses actives"
+            ],
+            "program": [
+                {
+                    "title": "Principes d'ergonomie",
+                    "items": [
+                        "Analyse des postes de travail",
+                        "Réglage du mobilier et du matériel",
+                        "Gestion de l'éclairage et du contraste"
+                    ]
+                },
+                {
+                    "title": "Exercices et bonnes pratiques",
+                    "items": [
+                        "Exercices d'étirement",
+                        "Micro-pauses actives",
+                        "Gestion du temps d'écran"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Personnel de bureau",
+                "Opérateurs informatiques",
+                "Tous salariés exposés aux écrans"
+            ]
+        },
+        "produits-chimiques": {
+            "title": "Manipulation et Stockage des produits chimiques",
+            "description": "Maîtrise des bonnes pratiques pour manipuler et stocker les substances dangereuses en toute sécurité.",
+            "duration": "12 H",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Identifier les risques liés aux produits chimiques",
+                "Rechercher des informations sur les produits dangereux",
+                "Assimiler les règles de prévention et de protection",
+                "Réagir en cas d'accident",
+                "Comprendre les risques présentés par les produits chimiques et leurs installations",
+                "Acquérir les bases d'une culture sécurité propre à la chimie",
+                "Diminuer le nombre et la gravité des accidents du travail"
+            ],
+            "program": [
+                {
+                    "title": "Connaitre les dangers liés aux produits chimiques",
+                    "items": [
+                        "Introduction aux caractéristiques physico-chimiques",
+                        "Dangers physiques et le risque incendie-explosion",
+                        "Dangers pour la santé (corrosion, intoxication)",
+                        "Dangers pour l'environnement"
+                    ]
+                },
+                {
+                    "title": "Maitriser la manipulation des produits chimiques",
+                    "items": [
+                        "Analyse des informations de la FDS et recherche d'informations",
+                        "Le risque incendie, explosion",
+                        "Les risques liés au stockage (généralités, incompatibilité)",
+                        "Les risques liés aux déchets"
+                    ]
+                },
+                {
+                    "title": "Les équipements de protection",
+                    "items": [
+                        "Protection collective et individuelle",
+                        "Protection des yeux et respiratoire",
+                        "Protection des mains et vêtements de protection"
+                    ]
+                },
+                {
+                    "title": "Exercice : Analyse du poste de travail",
+                    "items": [
+                        "Nature des procédés et état physique des produits",
+                        "Degré d'émission et voies d'exposition",
+                        "Durée, fréquence et quantité de produit",
+                        "Performance des systèmes de sécurité existants"
+                    ]
+                },
+                {
+                    "title": "Gestion des situations d'urgences",
+                    "items": [
+                        "Incendie / Accident / Déversement accidentel"
+                    ]
+                },
+                {
+                    "title": "Matériel fourni par l'entreprise",
+                    "items": [
+                        "Échantillons d'EPI et de produits chimiques",
+                        "Fiches de Données de Sécurité (FDS)",
+                        "Bacs de rétention et kit de déversement",
+                        "Extincteurs de type ABC et CO2"
+                    ]
+                },
+                {
+                    "title": "Méthodes et Moyens Pédagogiques",
+                    "items": [
+                        "Discussion, Exposé PowerPoint participatif",
+                        "Vidéos, films et cas pratiques",
+                        "Démonstrations et essais d'équipements",
+                        "Consignes de sécurité"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Toute personne de l'entreprise",
+                "Opérateurs et techniciens",
+                "Responsables sécurité"
+            ]
+        },
+        "travaux-hauteur": {
+            "title": "Sécurité des Travaux en hauteur",
+            "description": "Formation aux techniques sécurisées pour les interventions en élévation.",
+            "duration": "2 jours",
+            "level": "Opérateurs",
+            "objectives": [
+                "Identifier les risques liés au travail en hauteur",
+                "Utiliser les EPI antichute",
+                "Mettre en œuvre les techniques de sécurisation",
+                "Intervenir en cas d'accident"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Théorie et réglementation",
+                    "items": [
+                        "Réglementation sur le travail en hauteur",
+                        "Les risques de chute et leurs conséquences",
+                        "Les EPI antichute",
+                        "Les points d'ancrage et lignes de vie"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Pratique",
+                    "items": [
+                        "Vérification et utilisation des EPI",
+                        "Techniques de progression en hauteur",
+                        "Mise en situation sur site",
+                        "Procédures de secours et évacuation"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Techniciens de maintenance",
+                "Couvreurs et charpentiers",
+                "Personnel intervenant en hauteur"
+            ]
+        },
+        "evaluation-dangers": {
+            "title": "Identification et évaluation des dangers",
+            "description": "Méthodologie pour détecter, analyser et hiérarchiser les risques professionnels.",
+            "duration": "2 jours",
+            "level": "Encadrement",
+            "objectives": [
+                "Maîtriser les méthodes d'identification des dangers",
+                "Évaluer et hiérarchiser les risques",
+                "Élaborer le document unique",
+                "Proposer des mesures de prévention"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Méthodologie",
+                    "items": [
+                        "Cadre réglementaire de l'évaluation des risques",
+                        "Concepts : danger, risque, dommage",
+                        "Méthodes d'identification des dangers",
+                        "Outils d'évaluation des risques"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Mise en pratique",
+                    "items": [
+                        "Analyse de situations de travail",
+                        "Cotation et hiérarchisation des risques",
+                        "Élaboration du document unique (DUER)",
+                        "Plan d'action et mesures de prévention"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Responsables HSE",
+                "Managers et chefs d'équipe",
+                "Membres du CHSCT/CSE",
+                "Préventeurs"
+            ]
+        },
+        "espaces-confines": {
+            "title": "Travail dans les espaces clos (confinés)",
+            "description": "Formation aux procédures de sécurité pour intervenir dans les espaces confinés.",
+            "duration": "2 jours",
+            "level": "Opérateurs",
+            "objectives": [
+                "Identifier les risques liés aux espaces confinés",
+                "Appliquer les procédures d'entrée sécurisées",
+                "Utiliser les équipements de protection et de détection",
+                "Gérer les situations d'urgence en espace confiné"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Théorie et réglementation",
+                    "items": [
+                        "Définition et identification des espaces confinés",
+                        "Réglementation et obligations légales",
+                        "Les dangers spécifiques",
+                        "Équipements de détection et de protection",
+                        "Procédures de permis d'entrée"
+                    ]
+                },
+                {
+                    "title": "Jour 2 - Pratique et intervention",
+                    "items": [
+                        "Évaluation des risques avant intervention",
+                        "Mise en place des mesures de sécurité",
+                        "Utilisation des détecteurs de gaz",
+                        "Techniques de ventilation",
+                        "Procédures de sauvetage et évacuation",
+                        "Mise en situation pratique"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Opérateurs de maintenance",
+                "Personnel d'intervention",
+                "Équipes de sécurité",
+                "Surveillants d'espaces confinés"
+            ]
+        },
+        "securite-chantier": {
+            "title": "Sécurité au Chantier",
+            "description": "Formation aux règles de sécurité sur les chantiers de construction et de travaux publics.",
+            "duration": "1 jour",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Identifier les risques spécifiques aux chantiers",
+                "Appliquer les règles de sécurité sur chantier",
+                "Utiliser les équipements de protection collective et individuelle",
+                "Connaître la signalisation de chantier"
+            ],
+            "program": [
+                {
+                    "title": "Matin - Risques et réglementation",
+                    "items": [
+                        "Réglementation des chantiers de BTP",
+                        "Les principaux risques sur chantier",
+                        "Chutes de hauteur et de plain-pied",
+                        "Risques liés aux engins et véhicules",
+                        "Risques électriques et ensevelissement"
+                    ]
+                },
+                {
+                    "title": "Après-midi - Prévention et protection",
+                    "items": [
+                        "Équipements de protection individuelle (EPI)",
+                        "Protections collectives",
+                        "Signalisation et balisage de chantier",
+                        "Plan de prévention et PPSPS",
+                        "Conduite à tenir en cas d'accident"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Ouvriers du BTP",
+                "Chefs de chantier",
+                "Conducteurs de travaux",
+                "Coordonnateurs SPS"
+            ]
+        },
+        "epi": {
+            "title": "Équipements de protection individuelle (EPI)",
+            "description": "Formation à l'utilisation, l'entretien et le choix des équipements de protection individuelle.",
+            "duration": "1 jour",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Comprendre l'importance des EPI",
+                "Choisir les EPI adaptés aux risques",
+                "Utiliser et entretenir correctement ses EPI",
+                "Connaître la réglementation en vigueur"
+            ],
+            "program": [
+                {
+                    "title": "Théorie et réglementation",
+                    "items": [
+                        "Les principes généraux de prévention",
+                        "Les différentes catégories d'EPI",
+                        "Responsabilités employeur / salarié",
+                        "Marquage et conformité"
+                    ]
+                },
+                {
+                    "title": "Pratique et utilisation",
+                    "items": [
+                        "Présentation des EPI spécifiques au métier",
+                        "Vérification avant utilisation",
+                        "Règles de port et d'ajustement",
+                        "Entretien et stockage"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Tous les salariés",
+                "Chefs d'équipe",
+                "Responsables sécurité",
+                "Magasiniers"
+            ]
+        },
+        "cycle-responsable-hse": {
+            "title": "Cycle Responsable HSE",
+            "description": "Formation complète pour maîtriser les fondamentaux du métier de Responsable Hygiène, Sécurité et Environnement.",
+            "duration": "5 jours",
+            "level": "Expert",
+            "objectives": [
+                "Maîtriser le cadre réglementaire HSE",
+                "Savoir évaluer et gérer les risques professionnels",
+                "Mettre en place et animer un système de management HSE",
+                "Développer une culture sécurité en entreprise"
+            ],
+            "program": [
+                {
+                    "title": "Jour 1 - Cadre réglementaire et responsabilités",
+                    "items": [
+                        "Veille réglementaire HSE",
+                        "Responsabilités civile et pénale",
+                        "Les acteurs de la prévention",
+                        "Le Document Unique (DUER)"
+                    ]
+                },
+                {
+                    "title": "Jour 2 & 3 - Gestion des risques et opérationnel",
+                    "items": [
+                        "Analyse des risques",
+                        "Permis de feu, plans de prévention",
+                        "Gestion des entreprises extérieures",
+                        "Analyse des accidents du travail"
+                    ]
+                },
+                {
+                    "title": "Jour 4 & 5 - Management et communication",
+                    "items": [
+                        "Normes ISO 14001 et ISO 45001",
+                        "Audit et revue de direction",
+                        "Communication et leadership HSE",
+                        "Gestion de crise"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Futurs Responsables HSE",
+                "Animateurs Sécurité",
+                "Ingénieurs HSE",
+                "Chefs d'entreprise"
+            ]
+        },
+        "lutte-incendies-recyclage": {
+            "title": "Lutte contre les incendies\n(Recyclage)",
+            "description": "Mise à jour des connaissances et des compétences pratiques pour la lutte contre les incendies.",
+            "duration": "1 jour",
+            "level": "Maintien des acquis",
+            "objectives": [
+                "Réviser les fondamentaux de la lutte contre l'incendie",
+                "Actualiser les connaissances sur les agents extincteurs",
+                "Pratiquer la manipulation des extincteurs sur feux réels",
+                "Renforcer les réflexes d'évacuation"
+            ],
+            "program": [
+                {
+                    "title": "Théorie - Rappels",
+                    "items": [
+                        "Le triangle du feu et propagation",
+                        "Les classes de feux et agents extincteurs",
+                        "L'organisation de l'évacuation"
+                    ]
+                },
+                {
+                    "title": "Pratique - Exercices",
+                    "items": [
+                        "Manipulation des extincteurs sur bac à feu",
+                        "Utilisation des RIA (Robinets d'Incendie Armés)",
+                        "Mise en situation d'alerte et d'évacuation"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Équipiers de première intervention",
+                "Tout personnel ayant besoin d'un recyclage"
+            ]
+        },
+        "premiers-secours-recyclage": {
+            "title": "Les premiers secours\n(Recyclage)",
+            "description": "Maintien et actualisation des compétences du secouriste pour intervenir efficacement.",
+            "duration": "1 jour",
+            "level": "Maintien des acquis",
+            "objectives": [
+                "Réviser les gestes d'urgence et de survie",
+                "Intégrer les nouvelles recommandations en secourisme",
+                "Valider la pratique du massage cardiaque et du DAE",
+                "Échanger sur les retours d'expériences"
+            ],
+            "program": [
+                {
+                    "title": "Révision des gestes",
+                    "items": [
+                        "Protection et alerte",
+                        "La victime s'étouffe ou saigne",
+                        "La victime est inconsciente et respire"
+                    ]
+                },
+                {
+                    "title": "Cas concrets et DAE",
+                    "items": [
+                        "Massage cardiaque et utilisation du DAE",
+                        "Mises en situation d'accidents du travail",
+                        "Évaluation des compétences"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Secouristes désignés",
+                "Tout personnel souhaitant maintenir ses compétences"
+            ]
+        },
+        "securite-milieu-travail": {
+            "title": "La sécurité au milieu\nde travail",
+            "description": "Sensibilisation et bonnes pratiques pour garantir un environnement de travail sûr au quotidien.",
+            "duration": "1 jour",
+            "level": "Tous niveaux",
+            "objectives": [
+                "Identifier les risques courants en milieu de travail",
+                "Adopter les comportements sécuritaires",
+                "Comprendre les signalisations et consignes de sécurité",
+                "Participer à la culture sécurité de l'entreprise"
+            ],
+            "program": [
+                {
+                    "title": "Les fondamentaux",
+                    "items": [
+                        "Droits et devoirs en matière de sécurité",
+                        "Identification des dangers (chutes, manutention, bruit)",
+                        "Signalisation et équipements de protection"
+                    ]
+                },
+                {
+                    "title": "Prévention au quotidien",
+                    "items": [
+                        "L'ordre et la propreté au poste",
+                        "Gestes et postures de base",
+                        "Que faire en cas d'anomalie ou d'incident ?"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Nouveaux arrivants",
+                "Personnel de bureau et d'atelier",
+                "Intérimaires"
+            ]
+        },
+        "permis-travail": {
+            "title": "Permis de travail",
+            "description": "Formation à la délivrance et au contrôle des permis de travail pour les opérations à risques.",
+            "duration": "1 jour",
+            "level": "Opérationnel",
+            "objectives": [
+                "Comprendre l'utilité et le cadre légal du permis de travail",
+                "Savoir identifier les risques avant le début des travaux",
+                "Remplir et valider correctement les différents types de permis",
+                "Surveiller le respect des mesures de sécurité pendant l'activité"
+            ],
+            "program": [
+                {
+                    "title": "Cadre et Typologie",
+                    "items": [
+                        "Pourquoi un permis de travail ?",
+                        "Les différents permis (feu, pénétration, hauteur, fouille)",
+                        "Responsabilités de l'émetteur et de l'exécutant"
+                    ]
+                },
+                {
+                    "title": "Application pratique",
+                    "items": [
+                        "Analyse de risques préalable",
+                        "Vérification des conditions de sécurité sur site",
+                        "Clôture et restitution du permis"
+                    ]
+                }
+            ],
+            "targetAudience": [
+                "Chefs de chantiers et conducteurs de travaux",
+                "Superviseurs HSE",
+                "Donneurs d'ordres et chargés de travaux"
+            ]
+        }
+    },
+    "partners": {
+        "title": "Nos Références"
+    },
+    "nouveautes_section": {
+        "tag": "Innovation & Technologie",
+        "title_part1": "Formation en",
+        "title_part2": "Réalité Virtuelle",
+        "description": "Plongez vos collaborateurs dans des scénarios réalistes sans aucun risque. La réalité virtuelle double le taux de mémorisation et réduit le temps de formation par quatre.",
+        "list_item_1": "Simulation d'incendie et évacuation",
+        "list_item_2": "Travaux en hauteur et prévention des chutes",
+        "list_item_3": "Sensibilisation au risque chimique",
+        "list_item_4": "Chantiers et environnement industriels",
+        "cta": "Explorer nos modules VR"
+    },
     "common": {
         "coming_soon": "Bientôt disponible",
-        "learn_more": "En savoir plus",
-        "details": "Détails"
+        "learn_more": "Demander un devis",
+        "show_more": "Voir plus",
+        "show_less": "Voir moins",
+        "details": "Détails",
+        "our_services": "Nos Services"
+    },
+    "e_platform": {
+        "title": "E-Platform",
+        "coming_soon": "Page en cours de construction",
+        "description": "Nous travaillons activement sur notre nouvelle plateforme d'e-learning. Elle sera bientôt disponible pour vous offrir la meilleure expérience de formation."
+    },
+    "not_found": {
+        "title": "404",
+        "message": "Oups ! Page non trouvée",
+        "back_home": "Retour à l'accueil"
+    },
+    "nouveautes_page": {
+        "title": "Formations en Réalité Virtuelle",
+        "description": "Découvrez nos formations innovantes en réalité virtuelle pour une expérience d'apprentissage immersive et efficace",
+        "badge": "Réalité Virtuelle",
+        "vr_badge": "Formation VR",
+        "cta_title": "Intéressé par nos formations VR ?",
+        "cta_desc": "Contactez-nous pour découvrir comment la réalité virtuelle peut révolutionner votre formation en sécurité",
+        "cta_button": "Demander une Démo",
+        "vr_formations": {
+            "fire": {
+                "title": "Formation Incendie",
+                "desc": "Apprenez les gestes essentiels pour prévenir et combattre un incendie en réalité virtuelle immersive."
+            },
+            "first_aid": {
+                "title": "Premiers Secours",
+                "desc": "Maîtrisez les techniques de premiers secours dans des scénarios réalistes en VR."
+            },
+            "chemical": {
+                "title": "Manipulation et Stockage des Produits Chimiques",
+                "desc": "Formation complète sur la manipulation sécurisée des produits chimiques en environnement virtuel."
+            },
+            "height": {
+                "title": "Travaux en Hauteur",
+                "desc": "Entraînez-vous aux travaux en hauteur dans un environnement VR sécurisé et réaliste."
+            }
+        }
+    },
+    "hero": {
+        "title": "OZONE",
+        "subtitle": "CONSULTING",
+        "description": "Expertise et solutions innovantes pour la santé, la sécurité au travail et la gestion environnementale de votre entreprise.",
+        "scroll_indicator": "Découvrir"
+    },
+    "formations_section": {
+        "tag": "Formation & Coaching",
+        "title_part1": "Développez vos",
+        "title_part2": "Compétences Santé & Sécurité",
+        "description": "Nos programmes de formation sont conçus pour transformer la culture sécurité de votre entreprise. Une approche pédagogique interactive et pratique pour une meilleure assimilation des concepts.",
+        "sst": "Premiers Secours",
+        "sst_desc": "Formation aux gestes qui sauvent",
+        "fire": "Incendie",
+        "fire_desc": "Manipulation des extincteurs",
+        "habilitation": "Habilitation",
+        "habilitation_desc": "Sécurité électrique",
+        "management": "Management",
+        "management_desc": "Culture de sécurité",
+        "view_catalog": "Voir le catalogue complet"
     },
     "industries": {
         "title": "Secteurs et industries",
@@ -41,8 +1174,37 @@
             "telecom": "Télécommunications"
         }
     },
+    "services_section": {
+        "tag": "Expertise & Conseil",
+        "title_part1": "Nos Services de",
+        "title_part2": "Consulting HSE",
+        "description": "OZONE Safety Hub vous accompagne dans l'optimisation de votre performance en santé-sécurité. Nous intervenons sur l'ensemble de vos problématiques réglementaires et techniques pour garantir un environnement de travail sûr.",
+        "list_item_1": "Évaluation des risques professionnels et document unique",
+        "list_item_2": "Audit de conformité réglementaire (ISO 45001, ISO 14001)",
+        "list_item_3": "Élaboration de plans d'opération interne (POI)",
+        "list_item_4": "Externalisation de la fonction responsable HSSE",
+        "cta": "Découvrir tous nos services"
+    },
+    "contact_section": {
+        "title": "Contactez-Nous",
+        "intro": "Notre équipe est à votre disposition pour répondre à vos questions et vous accompagner dans vos projets",
+        "phone": "Téléphone",
+        "hours_week": "Lun - Ven: 8h30 - 18h00",
+        "hours_sat": "Sam: 9h00 - 12h00",
+        "call_now": "Appeler maintenant",
+        "email": "Email",
+        "response_time": "Réponse sous 24h",
+        "send_email": "Envoyer un email",
+        "our_offices": "Nos Bureaux",
+        "visit_us": "Venez nous rencontrer",
+        "sfax_hq": "Siège Sfax:",
+        "sousse_office": "Bureau Sousse:",
+        "get_directions": "Itinéraire Google Maps"
+    },
     "footer": {
         "rights": "Tous droits réservés.",
-        "links": "Liens rapides"
+        "links": "Liens rapides",
+        "tagline": "Expert en consulting et formation SST",
+        "copyright": "© {{year}} OZONE CONSULTING. Tous droits réservés."
     }
 }

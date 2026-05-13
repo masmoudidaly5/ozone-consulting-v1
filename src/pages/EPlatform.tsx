@@ -2,11 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Bell } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import o3Logo from "@/assets/O3.png";
 import underConstructionVideo from "@/assets/Under construction.webm";
 
 const EPlatform = () => {
     const navigate = useNavigate();
+    const { t } = useTranslation();
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
@@ -52,15 +54,14 @@ const EPlatform = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-5xl font-display font-bold text-white drop-shadow-2xl">
-                        E-Platform
+                        {t("e_platform.title")}
                     </h1>
                     <div className="space-y-3">
                         <h2 className="text-xl md:text-2xl font-semibold text-white/95 drop-shadow-xl">
-                            Page en cours de construction
+                            {t("e_platform.coming_soon")}
                         </h2>
                         <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow-xl font-medium">
-                            Nous travaillons activement sur notre nouvelle plateforme d'e-learning.
-                            Elle sera bientôt disponible pour vous offrir la meilleure expérience de formation.
+                            {t("e_platform.description")}
                         </p>
                     </div>
                 </div>

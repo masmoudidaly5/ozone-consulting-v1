@@ -46,7 +46,7 @@ const Industries = () => {
         },
         {
             image: itImg,
-            name: "IT & Développement",
+            name: t("industries.sectors.it_dev"),
             gradient: "from-indigo-600/20 to-cyan-600/20"
         },
         {
@@ -87,7 +87,7 @@ const Industries = () => {
     ];
 
     return (
-        <section id="industries" className="py-24 bg-slate-50 relative overflow-hidden">
+        <section id="industries" className="py-24 bg-[#033853] relative overflow-hidden">
             {/* Background patterns */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
                 <svg width="100%" height="100%">
@@ -103,19 +103,16 @@ const Industries = () => {
 
 
                 <div className="flex flex-col items-center text-center mb-16 space-y-4">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 border border-primary/10 rounded-full text-primary font-bold text-xs uppercase tracking-wider">
-                        <LayoutGrid className="w-4 h-4" />
-                        {t("industries.title")}
-                    </div>
 
-                    <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900 leading-tight">
+
+                    <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
                         {t("industries.subtitle")} <br />
                         <span className="text-primary italic">{t("industries.industries_count")}</span>
                     </h2>
 
                     <div className="w-24 h-1.5 bg-accent rounded-full mb-8"></div>
 
-                    <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+                    <p className="text-lg text-white/80 leading-relaxed max-w-3xl">
                         {t("industries.description")}
                     </p>
                 </div>
@@ -125,12 +122,12 @@ const Industries = () => {
                         return (
                             <div
                                 key={index}
-                                className="group relative p-3 bg-white rounded-2xl border border-slate-100 shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-1 flex flex-col items-center text-center overflow-hidden w-[45%] md:w-[22%] lg:w-[13%]"
+                                className="group relative p-3 bg-white/10 rounded-2xl border border-white/20 shadow-soft hover:shadow-medium transition-all duration-500 hover:-translate-y-1 flex flex-col items-center text-center overflow-hidden w-[45%] md:w-[22%] lg:w-[13%]"
                             >
                                 {/* Sector specific gradient background cover on hover */}
                                 <div className={`absolute inset-0 bg-gradient-to-br ${sector.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
-                                <div className="relative z-10 w-full aspect-square max-w-[140px] rounded-xl bg-slate-50 flex items-center justify-center mb-2 overflow-hidden group-hover:scale-105 transition-transform duration-500 border-2 border-slate-50 group-hover:border-accent/30 shadow-sm">
+                                <div className="relative z-10 w-full aspect-square max-w-[140px] rounded-xl bg-white/10 flex items-center justify-center mb-2 overflow-hidden group-hover:scale-105 transition-transform duration-500 border-2 border-white/20 group-hover:border-accent/30 shadow-sm">
                                     <img
                                         src={sector.image}
                                         alt={sector.name}
@@ -138,7 +135,7 @@ const Industries = () => {
                                     />
                                 </div>
 
-                                <h3 className="relative z-10 font-display font-bold text-slate-900 text-xs md:text-sm leading-tight group-hover:text-primary transition-colors duration-300 px-1">
+                                <h3 className="relative z-10 font-display font-bold text-white text-xs md:text-sm leading-tight group-hover:text-accent transition-colors duration-300 px-1">
                                     {sector.name}
                                 </h3>
 

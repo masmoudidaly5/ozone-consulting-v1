@@ -1,10 +1,12 @@
+import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo-ozone.png";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white text-slate-900 py-6 border-t border-slate-100">
+    <footer className="bg-[#033853] text-white py-6 border-t border-white/10">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
@@ -13,13 +15,13 @@ const Footer = () => {
               alt="OZONE CONSULTING"
               className="h-8"
             />
-            <p className="text-slate-600 text-sm">
-              Expert en consulting et formation SST
+            <p className="text-white/70 text-sm">
+              {t("footer.tagline")}
             </p>
           </div>
 
-          <div className="text-center text-slate-400 text-sm">
-            <p>© {currentYear} OZONE CONSULTING. Tous droits réservés.</p>
+          <div className="text-center text-white/50 text-sm">
+            <p>{t("footer.copyright", { year: currentYear })}</p>
           </div>
         </div>
       </div>
