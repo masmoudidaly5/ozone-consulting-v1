@@ -1,6 +1,6 @@
 import { Shield, FileText, Users, CheckCircle, BarChart, Activity, ClipboardList, ChevronDown, ChevronUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import isoImage from "@/assets/iso-45001.jpg";
+import isoImage from "@/assets/iso 45001.jpg";
 import iso9001Image from "@/assets/ISO9001 2.jpg";
 import iso14001Image from "@/assets/ISO 14001.jpg";
 import iso22000Image from "@/assets/ISO 22000.jpg";
