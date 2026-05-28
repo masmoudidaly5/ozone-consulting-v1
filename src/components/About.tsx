@@ -1,9 +1,9 @@
 import { Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import consultingImage from "@/assets/consulting.jpg";
-import isoImage from "@/assets/iso-45001.jpg";
+import isoImage from "@/assets/Iso-45001.jpg";
 import heroImage from "@/assets/hero-safety.jpg";
-import cnfcppLogo from "@/assets/logo/cnfcpp-logo.png";
+import cnfcppLogo from "@/assets/Logo/cnfcpp-logo.png";
 import o3Logo from "@/assets/O3.png";
 import { useTranslation } from "react-i18next";
 
