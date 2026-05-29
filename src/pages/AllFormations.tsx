@@ -66,8 +66,8 @@ const AllFormations = () => {
                                 <Card
                                     className="shadow-md hover:shadow-lg transition-all duration-300 border-none group overflow-hidden h-full flex flex-col bg-card"
                                 >
-                                    {/* Image Section - Even more compact */}
-                                    <div className="relative h-40 w-full overflow-hidden">
+                                    {/* Image Section - Larger and more visible */}
+                                    <div className="relative h-48 md:h-56 lg:h-64 w-full overflow-hidden">
                                         <img
                                             src={formation.image}
                                             alt={formation.title}
